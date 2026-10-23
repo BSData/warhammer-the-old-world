@@ -1,0 +1,14 @@
+{
+  "catalogue": {
+    "name": "Spirits of the Forest",
+    "id": "5c09-8e5b-a07f-b1b1",
+    "authorName": "Davy",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-31d1-bf57-53ea-ad55",
+    "gameSystemRevision": 189,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "catalogueLinks": [{"name": "Wood Elf Realms", "id": "a800-e13e-3b09-4161", "targetId": "13b1-ec94-d107-d711", "type": "catalogue"}]
+  }
+}

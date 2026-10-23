@@ -109,6 +109,15 @@
                     "shared": true,
                     "type": "instanceOf",
                     "value": 1
+                  },
+                  {
+                    "childId": "1795-303c-eb46-1e30",
+                    "childName": "Wood Elf Realms - Spirits of the Forest",
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
                   }
                 ]
               }

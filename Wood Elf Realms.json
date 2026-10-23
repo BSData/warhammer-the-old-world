@@ -273,7 +273,135 @@
             "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
           }
         ]
-      }
+      },
+      {
+        "name": "0-1 Gargantuan Treeman Ancient per 1,000 points",
+        "id": "93c0-3b4d-cf8f-8e15",
+        "hidden": false,
+        "constraints": [{"id": "ab52-ab17-da16-a5a2", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "modifiers": [
+          {
+            "field": "ab52-ab17-da16-a5a2",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [{"childId": "any", "field": "limit::points", "repeats": 1, "roundUp": false, "scope": "roster", "shared": true, "value": 1000}]
+          },
+          {
+            "field": "ab52-ab17-da16-a5a2",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [{"childId": "any", "field": "points", "repeats": 1, "roundUp": false, "scope": "force", "shared": true, "value": 1000}]
+          },
+          {
+            "comment": "Battle march",
+            "field": "ab52-ab17-da16-a5a2",
+            "type": "floor",
+            "value": 1,
+            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "0-1 Gargantuan Treemen per 1,000 points",
+        "id": "b392-3e5b-0bdd-571e",
+        "hidden": false,
+        "constraints": [{"id": "43f6-e7aa-9071-91fe", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "modifiers": [
+          {
+            "field": "43f6-e7aa-9071-91fe",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [{"childId": "any", "field": "limit::points", "repeats": 1, "roundUp": false, "scope": "roster", "shared": true, "value": 1000}]
+          },
+          {
+            "field": "43f6-e7aa-9071-91fe",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [{"childId": "any", "field": "points", "repeats": 1, "roundUp": false, "scope": "force", "shared": true, "value": 1000}]
+          },
+          {
+            "comment": "Battle march",
+            "field": "43f6-e7aa-9071-91fe",
+            "type": "floor",
+            "value": 1,
+            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "0-1 Tree Spirit per 1,000 points",
+        "id": "b430-fe45-b6db-c612",
+        "hidden": false,
+        "constraints": [{"id": "db62-eea6-e404-c868", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1}],
+        "modifiers": [
+          {
+            "field": "db62-eea6-e404-c868",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "b12a-1081-95e8-adf5",
+                "childName": "The Kinbands Of Atylwyth",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "Treeman General", "id": "884e-8c89-5ed4-da96", "hidden": false, "page": ""}
     ],
     "entryLinks": [
       {
@@ -9336,6 +9464,404 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Gargantuan Treemen",
+        "id": "cac2-56d8-50d2-9a9e",
+        "hidden": false,
+        "import": true,
+        "targetId": "d1e7-ab09-e4d8-3148",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Rare", "id": "548f-8752-db34-a0a1", "hidden": false, "primary": true, "targetId": "2bfe-5863-46fe-d284"},
+          {
+            "name": "Units (not including units whose troop type is 'swarms', 'war beasts' or 'war machines')",
+            "id": "69af-2408-5dfe-1da2",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fec1-537a-bbeb-7926"
+          },
+          {"name": "0-1 Gargantuan Treeman Ancient per 1,000 points", "id": "31d3-942b-120a-883d", "hidden": false, "primary": false, "targetId": "93c0-3b4d-cf8f-8e15"}
+        ],
+        "constraints": [
+          {
+            "id": "bdde-412e-4660-acdf",
+            "comment": "Grand melee",
+            "field": "points",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "d980-c608-cbf1-74ff",
+            "comment": "Combined arms",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "d67d-6a79-3035-71b5",
+            "comment": "Battle March points",
+            "field": "points",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "modifiers": [
+          {
+            "comment": "Grand melee",
+            "field": "bdde-412e-4660-acdf",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "cdbe-ecb9-27cb-fd2b",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0750-5d17-d708-f990",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Combined arms",
+            "field": "d980-c608-cbf1-74ff",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 2000
+              }
+            ]
+          },
+          {
+            "comment": "Combined arms",
+            "field": "d980-c608-cbf1-74ff",
+            "type": "set",
+            "value": 2,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "lessThan",
+                "value": 2000
+              }
+            ]
+          },
+          {
+            "comment": "Battle March points",
+            "field": "d67d-6a79-3035-71b5",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+              }
+            ]
+          },
+          {
+            "comment": "Grand melee",
+            "field": "bdde-412e-4660-acdf",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "cdbe-ecb9-27cb-fd2b",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0750-5d17-d708-f990",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          },
+          {
+            "comment": "Grand melee",
+            "field": "bdde-412e-4660-acdf",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "cdbe-ecb9-27cb-fd2b",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0750-5d17-d708-f990",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "any",
+                "field": "points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          },
+          {
+            "comment": "Combined arms",
+            "field": "d980-c608-cbf1-74ff",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "conditions": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "atLeast",
+                "value": 2000
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1000
+              }
+            ]
+          },
+          {
+            "comment": "Battle March points",
+            "field": "d67d-6a79-3035-71b5",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+              },
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "any",
+                "field": "limit::points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          },
+          {
+            "comment": "Battle March points",
+            "field": "d67d-6a79-3035-71b5",
+            "type": "increment",
+            "value": 1,
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+              },
+              {
+                "type": "and",
+                "conditions": [
+                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
+                ]
+              }
+            ],
+            "repeats": [
+              {
+                "childId": "any",
+                "field": "points",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gargantuan Treeman Ancient",
+        "id": "2629-a684-8147-0d61",
+        "hidden": false,
+        "import": true,
+        "targetId": "b7c6-0fbe-26b1-a334",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Characters", "id": "65ab-86fc-2fff-853c", "hidden": false, "primary": true, "targetId": "a4cc-15c9-cfae-1b3b"},
+          {
+            "name": "1 single 'per 1000 points' selection in Battle March",
+            "id": "4811-0683-3e05-cbd5",
+            "hidden": false,
+            "primary": false,
+            "targetId": "27c9-52f0-c942-681e"
+          },
+          {"name": "0-1 Gargantuan Treeman Ancient per 1,000 points", "id": "2821-90c6-541a-93bb", "hidden": false, "primary": false, "targetId": "93c0-3b4d-cf8f-8e15"}
+        ]
       }
     ],
     "sharedProfiles": [
@@ -10834,6 +11360,226 @@
             "typeId": "9f84-4221-785a-db50"
           }
         ]
+      },
+      {
+        "name": "Gargantuan Treemen Ancient",
+        "id": "07f8-a346-da53-8659",
+        "hidden": false,
+        "typeId": "b070-143a-73f-2772",
+        "typeName": "Model",
+        "characteristics": [
+          {"name": "M", "$text": "5", "typeId": "cd3b-a5a4-e185-5a9d"},
+          {"name": "WS", "$text": "5", "typeId": "b007-7d58-4f14-1e01"},
+          {"name": "BS", "$text": "5", "typeId": "59f9-ccf5-1155-fb05"},
+          {"name": "S", "$text": "6", "typeId": "5b6b-1427-2a45-dd0c"},
+          {"name": "T", "$text": "7", "typeId": "ab43-8b61-83e7-d090"},
+          {"name": "W", "$text": "7", "typeId": "83ed-7b82-bf1f-e558"},
+          {"name": "I", "$text": "1", "typeId": "73b1-abe5-72f8-41e2"},
+          {"name": "A", "$text": "4", "typeId": "dddc-9fbd-b0fd-a480"},
+          {"name": "Ld", "$text": "10", "typeId": "c435-6b14-f77e-3c72"}
+        ]
+      },
+      {
+        "name": "Gargantuan Treemen",
+        "id": "7479-f6f2-31df-7a11",
+        "hidden": false,
+        "typeId": "b070-143a-73f-2772",
+        "typeName": "Model",
+        "characteristics": [
+          {"name": "M", "$text": "5", "typeId": "cd3b-a5a4-e185-5a9d"},
+          {"name": "WS", "$text": "6", "typeId": "b007-7d58-4f14-1e01"},
+          {"name": "BS", "$text": "4", "typeId": "59f9-ccf5-1155-fb05"},
+          {"name": "S", "$text": "6", "typeId": "5b6b-1427-2a45-dd0c"},
+          {"name": "T", "$text": "7", "typeId": "ab43-8b61-83e7-d090"},
+          {"name": "W", "$text": "7", "typeId": "83ed-7b82-bf1f-e558"},
+          {"name": "I", "$text": "1", "typeId": "73b1-abe5-72f8-41e2"},
+          {"name": "A", "$text": "6", "typeId": "dddc-9fbd-b0fd-a480"},
+          {"name": "Ld", "$text": "10", "typeId": "c435-6b14-f77e-3c72"}
+        ]
+      },
+      {
+        "name": "Huge Oaken Fists",
+        "id": "3824-00f0-7a5a-06d1",
+        "hidden": false,
+        "typeId": "a378-c633-912d-11ce",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "Comabt", "typeId": "2360-c777-5e07-ed58"},
+          {"name": "S", "$text": "S", "typeId": "ac19-f99c-72e9-a1a7"},
+          {"name": "AP", "$text": "-2", "typeId": "9429-ffe7-2ce5-e9a5"},
+          {"name": "Special Rules", "$text": "Armour Bane (2)", "typeId": "5f83-3633-336b-93b4"},
+          {"name": "Notes", "$text": "", "typeId": "772a-a7ff-f6b3-df71"}
+        ]
+      },
+      {
+        "name": "Root eruption",
+        "id": "c5e1-341d-c624-3e5a",
+        "hidden": false,
+        "typeId": "a378-c633-912d-11ce",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "24\"", "typeId": "2360-c777-5e07-ed58"},
+          {"name": "S", "$text": "3(6)", "typeId": "ac19-f99c-72e9-a1a7"},
+          {"name": "AP", "$text": "-1", "typeId": "9429-ffe7-2ce5-e9a5"},
+          {"name": "Special Rules", "$text": "Bombardment, Move & Shoot, Multiple Wounds (D3+1)", "typeId": "5f83-3633-336b-93b4"},
+          {
+            "name": "Notes",
+            "$text": "This weapon shoots like a stone thrower, using the 'Bombardment' special rule and a 3\" blast template. If a 'Misfire' is rolled on the Artillery dice, this model losts a single Wound (instead of rolling on a Misfire table). The Multiple Wounds (D3+1) special rule applies only to a single model whose base lies underneath the central hole of the blast template.",
+            "typeId": "772a-a7ff-f6b3-df71"
+          }
+        ]
+      },
+      {
+        "name": "Blessings of the Oak",
+        "id": "a3e4-f0e0-cbef-1030",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "This model gains the Armoured Hide (1) special rule and is immune to Killing Blow, Monster Slayer, and Multiple Wounds (X) special rules. If this character suffers an unsaved wound from an attack with any of these special rules, they lose a single Wound.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Blessings of the Ash",
+        "id": "e2d7-1a84-28b3-4205",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "This character improves its Regeneration value by 1. In addition, any enemy model that directs its attacks against this character must re-roll any rolls To Hit of a natural 6.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Blessings of the Willow",
+        "id": "7d20-24a7-5224-9728",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "This character gains the Magic Resistance (-2) special rule. In addition, this character has a 5+ Ward Save against any Wounds suffered that were caused by an attack that has the Magical Attacks special rule.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Blessings of the Yew",
+        "id": "3e32-bfa7-191f-29fb",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "The first time this character would lose its last Wound, roll a D6:\n\n- On a roll of a 1, remove the character from play as normal\n- On a roll of 2-5, the character immediately regains one Wound and is not removed from play.\n- On a roll of a 6, the character recovers D3 lost Wound, up to its starting Wounds Characteristic.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Root eruption - Ancient",
+        "id": "3f36-823e-9dd8-d8f0",
+        "hidden": false,
+        "typeId": "a378-c633-912d-11ce",
+        "typeName": "Weapon",
+        "characteristics": [
+          {"name": "R", "$text": "24\"", "typeId": "2360-c777-5e07-ed58"},
+          {"name": "S", "$text": "3(6)", "typeId": "ac19-f99c-72e9-a1a7"},
+          {"name": "AP", "$text": "-1", "typeId": "9429-ffe7-2ce5-e9a5"},
+          {"name": "Special Rules", "$text": "Bombardment, Move & Shoot, Multiple Wounds (D3+1)", "typeId": "5f83-3633-336b-93b4"},
+          {
+            "name": "Notes",
+            "$text": "This weapon shoots like a stone thrower, using the 'Bombardment' special rule and a 5\" blast template. If a 'Misfire' is rolled on the Artillery dice, this model losts a single Wound (instead of rolling on a Misfire table). The Multiple Wounds (D3+1) special rule applies only to a single model whose base lies underneath the central hole of the blast template.",
+            "typeId": "772a-a7ff-f6b3-df71"
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands Of Cavaroc",
+        "id": "11a9-560b-e5b5-5785",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "A unit belonging to this Kindred gains the Vanguard special rule and improves the Movement Characteristic of the unit and their mounts (should they have one) by 1.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands Of Argwylon",
+        "id": "f0d5-6422-ce15-7948",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Description", "$text": "A unit belonging to this Kindred gains the Magic Resistance (-1) special rule.", "typeId": "9f84-4221-785a-db50"}]
+      },
+      {
+        "name": "The Kinbands Of Atylwyth",
+        "id": "2f0e-86e5-d3af-cc09",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "A unit belonging to this Kindred may re-roll any rolls To Hit of a natural 1. However, if you army includes any units that belong to this Kindred, it cannot include more than one unit with the Tree Spirit special rule per 1,000 points.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands Of Modryn",
+        "id": "a7eb-65a7-adb6-ab29",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "During the Shooting phase, a unit belonging to this Kindred may re-roll any rolls To Wound of a natural 1.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands Of Cythral",
+        "id": "e6cb-e483-0d0d-dae0",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "A unit belonging to this Kindred automatically passes any dangerous terrain tests it is required to make. In addition, it has a 5+ Ward save against any wounds suffered that were caused by a unit whose troop type is 'Monster'.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands of Torgovann",
+        "id": "1220-99a6-f29a-f50a",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Choose one non-magical combat weapon wielded by this unit and improve the Armour Piercing charactaristic by 1. The chosen weapon must clearly noted on your muster list.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
       }
     ],
     "sharedSelectionEntries": [
@@ -10854,6 +11600,17 @@
             "shared": true,
             "type": "max",
             "value": -1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "The Kinbands of Athel Loren",
+            "id": "3fab-2b27-34e8-281e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "602d-16af-a127-4f9c",
+            "type": "selectionEntryGroup"
           }
         ],
         "infoGroups": [
@@ -11114,6 +11871,17 @@
             "value": -1
           }
         ],
+        "entryLinks": [
+          {
+            "name": "The Kinbands of Athel Loren",
+            "id": "130a-d264-5c98-9673",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "602d-16af-a127-4f9c",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "infoGroups": [
           {
             "name": "Special Rules",
@@ -11327,6 +12095,17 @@
             "value": -1
           }
         ],
+        "entryLinks": [
+          {
+            "name": "The Kinbands of Athel Loren",
+            "id": "92bd-87f2-cb77-4a6f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "602d-16af-a127-4f9c",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "infoGroups": [
           {
             "name": "Special Rules",
@@ -11459,7 +12238,7 @@
             "name": "Command",
             "id": "3c3c-8841-3cf1-32a4",
             "hidden": false,
-            "sortIndex": 2,
+            "sortIndex": 3,
             "selectionEntries": [
               {
                 "name": "Eternal Warden",
@@ -11559,7 +12338,7 @@
             "name": "Unit Options",
             "id": "1cbe-827c-cf13-5c72",
             "hidden": false,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "selectionEntries": [
               {
                 "name": "Drilled",
@@ -11710,6 +12489,17 @@
             "value": -1
           }
         ],
+        "entryLinks": [
+          {
+            "name": "The Kinbands of Athel Loren",
+            "id": "c294-b59c-e4c0-9291",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "602d-16af-a127-4f9c",
+            "type": "selectionEntryGroup"
+          }
+        ],
         "infoGroups": [
           {
             "name": "Special Rules",
@@ -11815,7 +12605,7 @@
             "name": "Command",
             "id": "7478-1df-dc2e-82e2",
             "hidden": false,
-            "sortIndex": 2,
+            "sortIndex": 3,
             "selectionEntries": [
               {
                 "name": "Lord's Bowman",
@@ -11913,7 +12703,7 @@
             "name": "Unit Options",
             "id": "4295-612b-b820-b670",
             "hidden": false,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "selectionEntries": [
               {
                 "name": "Fire and Flee",
@@ -12650,7 +13440,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Faction: Wood Elf Realms", "id": "fe0f-a819-d516-91e4", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"}],
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "fe0f-a819-d516-91e4", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "4bbd-7861-9959-d2f5", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
         "constraints": [
           {
             "id": "587e-b6fc-ff7f-8382",
@@ -12794,7 +13587,23 @@
                     "field": "hidden",
                     "type": "set",
                     "value": false,
-                    "conditions": [{"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -12856,7 +13665,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Faction: Wood Elf Realms", "id": "dd9c-9116-7026-29e8", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"}],
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "dd9c-9116-7026-29e8", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "3bda-dd85-e04e-af24", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
         "constraints": [
           {
             "id": "d0e5-c7ff-8c49-b236",
@@ -13005,7 +13817,23 @@
                     "field": "hidden",
                     "type": "set",
                     "value": false,
-                    "conditions": [{"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -13281,7 +14109,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Faction: Wood Elf Realms", "id": "b168-85d3-deaa-9f36", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"}],
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "b168-85d3-deaa-9f36", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "cb79-eb6d-df4f-f3c6", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
         "constraints": [
           {
             "id": "34ac-8412-2c2f-0223",
@@ -13397,7 +14228,7 @@
                 "id": "44a8-6934-710c-ba37",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "a31a-6b47-4d8a-2c71",
                 "type": "selectionEntry"
               },
@@ -13406,7 +14237,7 @@
                 "id": "dd75-5d8e-ac6f-9d4e",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 1,
                 "targetId": "2505-873d-1655-3b0b",
                 "type": "selectionEntry",
                 "constraints": [{"id": "3da6-f405-7fda-443e", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1}]
@@ -13416,7 +14247,7 @@
                 "id": "6132-c943-c124-5d7a",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "4d03-edba-750b-23d8",
                 "type": "selectionEntry"
               },
@@ -13425,7 +14256,7 @@
                 "id": "9637-5601-1417-535f",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 6,
                 "targetId": "f11a-2790-be85-ac4b",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "dfc-9a4a-56a4-3399", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
@@ -13454,7 +14285,23 @@
                     "field": "hidden",
                     "type": "set",
                     "value": false,
-                    "conditions": [{"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -14406,7 +15253,7 @@
                 "id": "6de3-137a-85f1-8eab",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 7,
                 "targetId": "f11a-2790-be85-ac4b",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "5c98-8f04-d0d1-faf", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
@@ -14416,7 +15263,7 @@
                 "id": "f0b8-fb4f-a041-e351",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 9,
+                "sortIndex": 4,
                 "targetId": "1539-fd78-88f-badd",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "7c3-a54a-1746-1bfc", "field": "points", "scope": "parent", "shared": true, "type": "max", "value": 100}]
@@ -14426,9 +15273,51 @@
                 "id": "071d-4202-d232-99fb",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 8,
                 "targetId": "d961-4f91-2b63-4c4b",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "472d-68e6-6c7f-aa0e",
+                "hidden": true,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "3230-aee2-0d24-1378", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "3df0-4c30-ad9f-e688",
+                            "childName": "Glamour Weave Kindred",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -14487,7 +15376,7 @@
                 "name": "Lores of Magic",
                 "id": "bef-4f5b-2c15-c6be",
                 "hidden": false,
-                "sortIndex": 8,
+                "sortIndex": 9,
                 "constraints": [
                   {"id": "47dd-cf85-821a-3dec", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "b753-5dff-8424-56e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -14572,7 +15461,7 @@
                 "id": "9394-9972-a37e-dcf3",
                 "collapsible": true,
                 "hidden": false,
-                "sortIndex": 6,
+                "sortIndex": 3,
                 "constraints": [{"id": "9214-8813-9e16-d805", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
@@ -14624,7 +15513,7 @@
                 "id": "997b-1ed0-8ceb-f98f",
                 "defaultSelectionEntryId": "5d95-957a-5b07-51f4",
                 "hidden": false,
-                "sortIndex": 7,
+                "sortIndex": 10,
                 "constraints": [
                   {"id": "dd6f-deaa-9f12-c2a1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "60e3-8faa-9eed-a58e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -14655,7 +15544,7 @@
                 "name": "Command",
                 "id": "4e50-b34c-7d9b-212f",
                 "hidden": false,
-                "sortIndex": 5,
+                "sortIndex": 6,
                 "constraints": [{"id": "4d1b-23da-6289-69e6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [{"name": "General", "id": "3a29-e140-c2b3-10c9", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
               }
@@ -14998,7 +15887,7 @@
                 "id": "96a9-d355-cbc5-b03d",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 7,
                 "targetId": "f11a-2790-be85-ac4b",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "1c1a-5e69-b6fc-8fba", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
@@ -15008,7 +15897,7 @@
                 "id": "d747-89ad-3924-fa2f",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 9,
+                "sortIndex": 4,
                 "targetId": "1539-fd78-88f-badd",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "280-4599-3c7a-e8af", "field": "points", "scope": "parent", "shared": true, "type": "max", "value": 50}]
@@ -15018,9 +15907,51 @@
                 "id": "1e17-2ae4-cbff-7ab1",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 8,
                 "targetId": "d961-4f91-2b63-4c4b",
                 "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "c0b8-0f67-d870-b372",
+                "hidden": true,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "db6e-33f1-d41b-624f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditionGroups": [
+                      {
+                        "type": "and",
+                        "conditions": [
+                          {
+                            "childId": "3df0-4c30-ad9f-e688",
+                            "childName": "Glamour Weave Kindred",
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -15079,7 +16010,7 @@
                 "name": "Lores of Magic",
                 "id": "7397-e50b-fd62-b08e",
                 "hidden": false,
-                "sortIndex": 8,
+                "sortIndex": 9,
                 "constraints": [
                   {"id": "dd1e-69b9-675e-a413", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "d0ac-e0b4-8e87-e09b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -15164,7 +16095,7 @@
                 "id": "8ba1-1764-c589-b377",
                 "collapsible": true,
                 "hidden": false,
-                "sortIndex": 6,
+                "sortIndex": 3,
                 "constraints": [{"id": "5c31-e84b-9ca6-75a6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
@@ -15216,7 +16147,7 @@
                 "id": "8f1c-d880-7057-eff1",
                 "defaultSelectionEntryId": "bd9d-a343-75-c55d",
                 "hidden": false,
-                "sortIndex": 7,
+                "sortIndex": 10,
                 "constraints": [
                   {"id": "558d-5e58-78d-d971", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "7dce-4d2b-317d-70b7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -15247,7 +16178,7 @@
                 "name": "Command",
                 "id": "c587-735b-a077-a239",
                 "hidden": false,
-                "sortIndex": 5,
+                "sortIndex": 6,
                 "constraints": [{"id": "4d1d-c099-f666-ea80", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [{"name": "General", "id": "8160-bb9e-723a-4fa6", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
               }
@@ -15458,7 +16389,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Faction: Wood Elf Realms", "id": "630b-8932-75ee-da8c", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"}],
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "630b-8932-75ee-da8c", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "2d50-9544-09cf-5a56", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
         "constraints": [
           {
             "id": "c936-62eb-07f9-aa38",
@@ -15568,7 +16502,7 @@
                 "id": "ac55-28bc-4827-78f4",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "4d03-edba-750b-23d8",
                 "type": "selectionEntry"
               },
@@ -15577,7 +16511,7 @@
                 "id": "4507-4b98-7aba-5711",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "a31a-6b47-4d8a-2c71",
                 "type": "selectionEntry"
               },
@@ -15586,7 +16520,7 @@
                 "id": "2d53-a136-2fe7-19d2",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 1,
                 "targetId": "2505-873d-1655-3b0b",
                 "type": "selectionEntry",
                 "constraints": [{"id": "c913-2e82-ff3b-bb96", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1}]
@@ -15596,10 +16530,38 @@
                 "id": "95f2-e684-1955-6348",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 7,
                 "targetId": "f11a-2790-be85-ac4b",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "75da-bae3-7fe8-2f93", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 100}]
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "b1f4-ddcd-5572-84e9",
+                "hidden": true,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "d4af-caae-eb35-b6a4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -15624,7 +16586,23 @@
                     "field": "hidden",
                     "type": "set",
                     "value": false,
-                    "conditions": [{"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                          {
+                            "childId": "1795-303c-eb46-1e30",
+                            "childName": "Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
@@ -15706,7 +16684,7 @@
                 "id": "e026-aeb9-5a1b-2de1",
                 "defaultSelectionEntryId": "1846-f202-6bdb-4de1",
                 "hidden": false,
-                "sortIndex": 7,
+                "sortIndex": 9,
                 "constraints": [
                   {"id": "b4ef-522a-c632-cab1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "7096-8bb5-be77-d447", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -15761,7 +16739,10 @@
         "hidden": false,
         "import": true,
         "type": "unit",
-        "categoryLinks": [{"name": "Faction: Wood Elf Realms", "id": "37e-7a1a-cb0f-98ed", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"}],
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "37e-7a1a-cb0f-98ed", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "ffd2-7b9c-d294-0648", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
         "constraints": [
           {
             "id": "0827-33d0-305c-af90",
@@ -15869,7 +16850,7 @@
                 "id": "2ec0-325e-4c70-749d",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 2,
                 "targetId": "7cab-40e6-f134-de78",
                 "type": "selectionEntry",
                 "constraints": [{"id": "6a2-c58d-5c7-2c7f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
@@ -15893,6 +16874,60 @@
                 "targetId": "f11a-2790-be85-ac4b",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "ceeb-9b47-d371-deb4", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
+              },
+              {
+                "name": "Ambushers",
+                "id": "32c1-9c9c-b2fd-2387",
+                "hidden": true,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "1a72-f233-336d-03c0",
+                "type": "selectionEntry",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "6406-5623-9082-392a",
+                "hidden": true,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "836c-60fc-ddbe-b202",
+                        "childName": "Faction: Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "infoLinks": [
@@ -15905,7 +16940,7 @@
                 "name": "Lores of Magic",
                 "id": "c0ee-1b8d-608b-cb24",
                 "hidden": false,
-                "sortIndex": 6,
+                "sortIndex": 8,
                 "constraints": [
                   {"id": "4cdb-e5e9-fc3-1885", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "83b5-1aae-ad23-fca7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
@@ -15978,7 +17013,7 @@
                 "id": "1af2-2970-b533-cb2d",
                 "flatten": true,
                 "hidden": false,
-                "sortIndex": 2,
+                "sortIndex": 4,
                 "constraints": [{"id": "db10-18a9-4c31-118c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
@@ -16008,7 +17043,7 @@
                 "id": "744b-6353-827d-f205",
                 "defaultSelectionEntryId": "707d-d8d8-ffc1-b78d",
                 "hidden": false,
-                "sortIndex": 5,
+                "sortIndex": 9,
                 "constraints": [
                   {"id": "ad39-afac-4dfd-f597", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "aa80-979c-28cd-6498", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -16039,7 +17074,7 @@
                 "name": "Command",
                 "id": "54c4-866e-e0b2-d018",
                 "hidden": false,
-                "sortIndex": 4,
+                "sortIndex": 6,
                 "constraints": [{"id": "6efc-8f06-3a6f-cd51", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [{"name": "General", "id": "f83b-edcd-8260-7a50", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
               }
@@ -16064,6 +17099,17 @@
             "shared": true,
             "type": "max",
             "value": -1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "The Kinbands of Athel Loren",
+            "id": "90f0-9629-8f5d-98c8",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "602d-16af-a127-4f9c",
+            "type": "selectionEntryGroup"
           }
         ],
         "infoGroups": [
@@ -16163,7 +17209,7 @@
             "id": "cb9a-54c-551d-1993",
             "hidden": false,
             "import": true,
-            "sortIndex": 2,
+            "sortIndex": 1,
             "type": "model",
             "categoryLinks": [{"name": "Light Cavalry", "id": "15c8-82ae-5de9-9f3b", "hidden": false, "primary": false, "targetId": "600c-7d08-5be1-fe0c"}],
             "constraints": [{"id": "da83-2008-37d8-592a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4}],
@@ -16317,7 +17363,7 @@
             "name": "Command",
             "id": "ab68-1785-3a74-8c7f",
             "hidden": false,
-            "sortIndex": 3,
+            "sortIndex": 2,
             "selectionEntries": [
               {
                 "name": "Glade Knight",
@@ -19022,6 +20068,549 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Gargantuan Treemen",
+        "id": "d1e7-ab09-e4d8-3148",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "9437-ffbb-70b0-33a3", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "78ed-09cc-4727-4220", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
+        "constraints": [
+          {
+            "id": "f510-cb1a-9d51-875e",
+            "comment": "Unit strenght script",
+            "field": "73ea-910d-c188-35d0",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "costs": [{"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+        "infoGroups": [
+          {
+            "name": "Special Rules",
+            "id": "bfd4-780b-784d-a78f",
+            "hidden": false,
+            "infoLinks": [
+              {"name": "Close Order", "id": "d067-f2f5-a988-deb5", "hidden": false, "targetId": "883e-e1b1-4fe9-5912", "type": "profile"},
+              {"name": "Flammable", "id": "59fe-f0c7-dcfd-957e", "hidden": false, "targetId": "8f64-6d4c-466b-1b94", "type": "profile"},
+              {"name": "Immune To Psychology", "id": "cb84-3e5d-66bd-4a38", "hidden": false, "targetId": "93d9-c75b-f655-30ac", "type": "profile"},
+              {"name": "Large Target", "id": "4ef3-dccf-b00e-5169", "hidden": false, "targetId": "c822-7ad0-f24a-e4af", "type": "profile"},
+              {"name": "Lore of Athel Loren", "id": "f0e6-0773-4ac4-3f90", "hidden": false, "targetId": "7f99-6c97-9b99-ab2e", "type": "profile"},
+              {"name": "Magical Attacks", "id": "1686-9976-0ed0-acfd", "hidden": false, "targetId": "2125-6aa2-f782-42bf", "type": "profile"},
+              {"name": "Move Through Cover", "id": "7066-8cc5-9072-e299", "hidden": false, "targetId": "e83e-f127-1904-3858", "type": "profile"},
+              {
+                "name": "Regeneration",
+                "id": "ac1f-60a7-71b3-d914",
+                "hidden": false,
+                "targetId": "2eb0-1ec8-8e04-72d4",
+                "type": "profile",
+                "modifiers": [{"field": "name", "type": "append", "value": "(5+)"}]
+              },
+              {
+                "name": "Stomp Attacks",
+                "id": "5b62-e44e-b204-0a5a",
+                "hidden": false,
+                "targetId": "72db-24bb-7493-d753",
+                "type": "profile",
+                "modifiers": [{"field": "name", "type": "append", "value": "(D6)"}]
+              },
+              {"name": "Terror", "id": "fd6f-7b69-f5de-19b5", "hidden": false, "targetId": "c7a2-35bf-4313-f4f0", "type": "profile"},
+              {"name": "Timmm-Berrr!", "id": "383c-7b47-3719-6820", "hidden": false, "targetId": "4f28-3f86-cf88-6b3a", "type": "profile"},
+              {"name": "Tree Spirit", "id": "70a9-4726-5c8a-e4e8", "hidden": false, "targetId": "73e-df40-cff9-91af", "type": "profile"},
+              {"name": "Tree Whack", "id": "5c1a-9ae0-08db-eca2", "hidden": false, "targetId": "1ca4-df5e-b2e7-9e1e", "type": "profile"},
+              {"name": "Unbreakable", "id": "f735-fad8-1b45-ccbf", "hidden": false, "targetId": "d3eb-1fa0-bb19-f390", "type": "profile"}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gargantuan Treemen",
+            "id": "723b-12a7-e821-e88e",
+            "hidden": false,
+            "typeId": "2878-9a1f-dd74-48e3",
+            "typeName": "Unit",
+            "characteristics": [{"name": "Troop Type", "$text": "Behemoth", "typeId": "5d94-6b94-bd89-1944"}, {"name": "Unit Size", "$text": "1", "typeId": "80a1-bb6f-66e4-4a5b"}]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Gargantuan Treemen",
+            "id": "127f-0dad-cd18-7810",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Behemoth", "id": "79f4-9945-ee47-69f6", "hidden": false, "primary": false, "targetId": "3755-6732-99b2-c713"},
+              {"name": "MAY_HAVE_ARMOUR", "id": "c3bf-89cc-45a1-d840", "hidden": false, "primary": false, "targetId": "may-have-armour"}
+            ],
+            "constraints": [
+              {"id": "982e-b49b-1606-14f0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f385-7512-e394-f823", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 300}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Huge Oaken Fists",
+                "id": "de70-635e-ff66-3241",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "7c55-fcbd-a228-89bc",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Root Eruption",
+                "id": "d79d-9f6c-e93f-98d8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "aff1-2a61-0d4d-df8b",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Full Plate Armour",
+                "id": "3f26-ad09-206f-50d8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "2505-873d-1655-3b0b",
+                "type": "selectionEntry",
+                "constraints": [{"id": "e29f-398a-ddbc-4373", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Forest Sprites",
+                "id": "54d6-c93b-356c-20d4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 6,
+                "targetId": "f11a-2790-be85-ac4b",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "0748-67a3-f623-d783", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "ba68-398d-7ab7-e752",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "3be4-d3e2-7fe1-8815", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ],
+            "infoLinks": [
+              {"name": "Gargantuan Treemen", "id": "2cf3-d413-a5cc-2644", "hidden": false, "targetId": "7479-f6f2-31df-7a11", "type": "profile"},
+              {"name": "Base (100x150)", "id": "6f7b-c1bd-fcb2-7e28", "hidden": false, "targetId": "a35e-8f23-b67-1efe", "type": "profile"}
+            ],
+            "modifiers": [{"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 7}],
+            "selectionEntries": [
+              {
+                "name": "Ambushers",
+                "id": "ac4c-f45e-8a44-42ab",
+                "collective": true,
+                "hidden": true,
+                "import": true,
+                "sortIndex": 4,
+                "type": "upgrade",
+                "constraints": [{"id": "f9e8-bcf2-2833-c0b1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 10}],
+                "infoLinks": [{"name": "Ambushers", "id": "d38f-d94a-32cc-e45e", "hidden": false, "targetId": "8c0b-6fe6-dc06-512", "type": "profile"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Wizard Level",
+                "id": "a269-cf76-2f16-4a08",
+                "defaultSelectionEntryId": "1846-f202-6bdb-4de1",
+                "hidden": false,
+                "sortIndex": 8,
+                "constraints": [
+                  {"id": "da2e-15e3-1a06-9332", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c0b2-57c4-f21b-6a30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Wizard Level 1",
+                    "id": "b7c2-5b5c-8f80-d3f2",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "7d84-39e9-a5f-947e",
+                    "type": "selectionEntry"
+                  }
+                ]
+              },
+              {
+                "name": "Lores of Magic",
+                "id": "2308-35d0-ab7a-6752",
+                "hidden": false,
+                "sortIndex": 7,
+                "constraints": [
+                  {"id": "5a99-423a-a748-0329", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "dbe1-8b27-523c-59cc", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Battle Magic",
+                    "id": "8c89-8a4d-42e0-1356",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "5b2e-35c6-f987-741e",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Elementalism",
+                    "id": "407f-2ca9-3ee4-4228",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "2b23-3ae1-f5ad-8e7a",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Lore of the Wilds",
+                    "id": "0591-257d-8da5-1d74",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "targetId": "ff3c-871c-ca97-a29c",
+                    "type": "selectionEntry"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "5a99-423a-a748-0329",
+                    "type": "set",
+                    "value": 2,
+                    "conditions": [{"childId": "8123-d36e-9442-13a1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Huge Oaken Fists",
+        "id": "7c55-fcbd-a228-89bc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e533-3f18-ac39-c000", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "10f6-f30d-f87a-cdbc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Huge Oaken Fists", "id": "b593-ff74-aca9-aa3c", "hidden": false, "targetId": "3824-00f0-7a5a-06d1", "type": "profile"}]
+      },
+      {
+        "name": "Root Eruption",
+        "id": "aff1-2a61-0d4d-df8b",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "2530-1f7c-17c4-7d7a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c8b7-790c-dca8-36b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Root eruption", "id": "6a8f-279c-add9-6d50", "hidden": false, "targetId": "c5e1-341d-c624-3e5a", "type": "profile"}]
+      },
+      {
+        "name": "Gargantuan Treeman Ancient",
+        "id": "b7c6-0fbe-26b1-a334",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Faction: Wood Elf Realms", "id": "9e3a-b620-8a63-0c1d", "hidden": false, "primary": false, "targetId": "f9f5-dd21-7903-b9c"},
+          {"name": "0-1 Tree Spirit per 1,000 points", "id": "49dd-4175-7cb1-9c01", "hidden": false, "primary": false, "targetId": "b430-fe45-b6db-c612"}
+        ],
+        "constraints": [
+          {
+            "id": "6db6-109a-4639-5f09",
+            "comment": "Unit strenght script",
+            "field": "73ea-910d-c188-35d0",
+            "includeChildSelections": true,
+            "scope": "self",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "infoGroups": [
+          {
+            "name": "Special Rules",
+            "id": "d838-c3b6-1681-2078",
+            "hidden": false,
+            "infoLinks": [
+              {"name": "Close Order", "id": "a304-42ce-fa3d-63b2", "hidden": false, "targetId": "883e-e1b1-4fe9-5912", "type": "profile"},
+              {"name": "Flammable", "id": "30b5-63ed-7453-d97d", "hidden": false, "targetId": "8f64-6d4c-466b-1b94", "type": "profile"},
+              {"name": "Immune To Psychology", "id": "98e6-8711-cba5-6cce", "hidden": false, "targetId": "93d9-c75b-f655-30ac", "type": "profile"},
+              {"name": "Large Target", "id": "f93e-b199-1b86-f697", "hidden": false, "targetId": "c822-7ad0-f24a-e4af", "type": "profile"},
+              {"name": "Lore of Athel Loren", "id": "6106-111d-1fe2-2e70", "hidden": false, "targetId": "7f99-6c97-9b99-ab2e", "type": "profile"},
+              {"name": "Magical Attacks", "id": "5a55-c6d2-b72f-e86f", "hidden": false, "targetId": "2125-6aa2-f782-42bf", "type": "profile"},
+              {"name": "Move Through Cover", "id": "d81c-6d17-8a4c-faf9", "hidden": false, "targetId": "e83e-f127-1904-3858", "type": "profile"},
+              {
+                "name": "Regeneration",
+                "id": "d38f-f8d4-f46d-8835",
+                "hidden": false,
+                "targetId": "2eb0-1ec8-8e04-72d4",
+                "type": "profile",
+                "modifiers": [{"field": "name", "type": "append", "value": "(5+)"}]
+              },
+              {
+                "name": "Stomp Attacks",
+                "id": "6e29-428d-8773-6a7e",
+                "hidden": false,
+                "targetId": "72db-24bb-7493-d753",
+                "type": "profile",
+                "modifiers": [{"field": "name", "type": "append", "value": "(D6)"}]
+              },
+              {"name": "Terror", "id": "b03a-be21-57b0-b4fa", "hidden": false, "targetId": "c7a2-35bf-4313-f4f0", "type": "profile"},
+              {"name": "Timmm-Berrr!", "id": "9b49-520f-4e96-251c", "hidden": false, "targetId": "4f28-3f86-cf88-6b3a", "type": "profile"},
+              {"name": "Tree Spirit", "id": "9e1d-7b8c-b28a-0e4e", "hidden": false, "targetId": "73e-df40-cff9-91af", "type": "profile"},
+              {"name": "Tree Whack", "id": "7b7a-9191-4984-2ce5", "hidden": false, "targetId": "1ca4-df5e-b2e7-9e1e", "type": "profile"},
+              {"name": "Unbreakable", "id": "0f50-7b27-c63a-f5bf", "hidden": false, "targetId": "d3eb-1fa0-bb19-f390", "type": "profile"}
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gargantuan Treeman Ancient",
+            "id": "e522-3b00-0a7a-c54d",
+            "hidden": false,
+            "typeId": "2878-9a1f-dd74-48e3",
+            "typeName": "Unit",
+            "characteristics": [{"name": "Troop Type", "$text": "Behemoth", "typeId": "5d94-6b94-bd89-1944"}, {"name": "Unit Size", "$text": "1", "typeId": "80a1-bb6f-66e4-4a5b"}]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Gargantuan Treeman Ancient",
+            "id": "6b30-3e6c-2ca1-e9be",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [
+              {"name": "Behemoth", "id": "7487-7d33-6005-9833", "hidden": false, "primary": false, "targetId": "3755-6732-99b2-c713"},
+              {"name": "MAY_HAVE_ARMOUR", "id": "78de-2af0-dcdf-b356", "hidden": false, "primary": false, "targetId": "may-have-armour"}
+            ],
+            "constraints": [
+              {"id": "3e5c-075b-e708-fbef", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "aebf-844c-763b-e507", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 325}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Full Plate Armour",
+                "id": "5fb0-6178-3df4-b9d5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "2505-873d-1655-3b0b",
+                "type": "selectionEntry",
+                "constraints": [{"id": "d746-aadf-21ee-a4b8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
+              },
+              {
+                "name": "Huge Oaken Fists",
+                "id": "902c-fbc3-3945-5faa",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "7c55-fcbd-a228-89bc",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Root Eruption",
+                "id": "d98b-d94b-a2d6-4641",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "aff1-2a61-0d4d-df8b",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Blessings of the Elder Wood",
+                "id": "5300-eba0-8e05-bce0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "cfce-82b2-5845-bd5d",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "3d97-4ac1-bfb1-4a7f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Forest Sprites",
+                "id": "ce59-9a98-4c0a-2044",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 7,
+                "targetId": "f11a-2790-be85-ac4b",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "e9a5-e0df-d8a8-b001", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 100}]
+              }
+            ],
+            "infoLinks": [
+              {"name": "Base (100x150)", "id": "a661-cfd1-9917-2ad4", "hidden": false, "targetId": "a35e-8f23-b67-1efe", "type": "profile"},
+              {"name": "Gargantuan Treemen Ancient", "id": "f5cb-56b7-6204-1907", "hidden": false, "targetId": "07f8-a346-da53-8659", "type": "profile"}
+            ],
+            "modifiers": [
+              {"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 7},
+              {
+                "field": "category",
+                "type": "add",
+                "value": "884e-8c89-5ed4-da96",
+                "conditions": [{"childId": "e237-63aa-0085-9a2e", "childName": "General", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ambushers",
+                "id": "9037-3f69-bae3-b2bf",
+                "collective": true,
+                "hidden": true,
+                "import": true,
+                "sortIndex": 4,
+                "type": "upgrade",
+                "constraints": [{"id": "0bbb-5c88-294b-89e4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 10}],
+                "infoLinks": [{"name": "Ambushers", "id": "b113-80b7-e434-33e6", "hidden": false, "targetId": "8c0b-6fe6-dc06-512", "type": "profile"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Lores of Magic",
+                "id": "d466-5e1b-3b98-6649",
+                "hidden": false,
+                "sortIndex": 8,
+                "constraints": [
+                  {"id": "4a4f-922d-97bf-29a7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                  {"id": "6e49-a395-2012-66c4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Battle Magic",
+                    "id": "cee8-95b3-a98c-307d",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "5b2e-35c6-f987-741e",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Elementalism",
+                    "id": "6e61-bee5-bfba-2aea",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "2b23-3ae1-f5ad-8e7a",
+                    "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Lore of the Wilds",
+                    "id": "2216-503f-d3c4-e6f5",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "targetId": "ff3c-871c-ca97-a29c",
+                    "type": "selectionEntry"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "4a4f-922d-97bf-29a7",
+                    "type": "set",
+                    "value": 2,
+                    "conditions": [{"childId": "8123-d36e-9442-13a1", "field": "selections", "includeChildSelections": true, "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+                  }
+                ]
+              },
+              {
+                "name": "Wizard Level",
+                "id": "cde2-a0b9-2f77-0119",
+                "defaultSelectionEntryId": "1846-f202-6bdb-4de1",
+                "hidden": false,
+                "sortIndex": 9,
+                "constraints": [
+                  {"id": "b1e2-dd2c-5869-b752", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "294e-9621-28ce-b2d2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Wizard Level 2",
+                    "id": "f8e6-6ccc-8fb8-7bad",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "8e47-73e8-f7f9-808",
+                    "type": "selectionEntry"
+                  }
+                ]
+              },
+              {
+                "name": "Command",
+                "id": "73a9-3ad7-4a07-633e",
+                "hidden": false,
+                "sortIndex": 6,
+                "constraints": [{"id": "54d9-0c36-53c7-5cf6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "entryLinks": [{"name": "General", "id": "e237-63aa-0085-9a2e", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ambushers",
+        "id": "1a72-f233-336d-03c0",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "54d9-8542-bef8-85dd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 10}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+        "infoLinks": [{"name": "Ambushers", "id": "fb54-32c6-9797-795d", "hidden": false, "targetId": "8c0b-6fe6-dc06-512", "type": "profile"}]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -19727,6 +21316,198 @@
                     "conditions": [{"childId": "104c-1c37-1bd8-78c4", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Blessings of the Elder Wood",
+        "id": "cfce-82b2-5845-bd5d",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Blessings of the Oak",
+            "id": "8ea0-2ef6-b507-de8a",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "f6b7-3bbc-f7e0-4ac4",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 50}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "Blessings of the Oak", "id": "ffc0-838a-4ad8-f941", "hidden": false, "targetId": "a3e4-f0e0-cbef-1030", "type": "profile"}]
+          },
+          {
+            "name": "Blessings of the Ash",
+            "id": "20c5-3734-f6ce-93c5",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "4645-98c4-d439-e3aa",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 45}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "Blessings of the Ash", "id": "b00c-37a1-d18f-8928", "hidden": false, "targetId": "e2d7-1a84-28b3-4205", "type": "profile"}]
+          },
+          {
+            "name": "Blessings of the Willow",
+            "id": "7108-5692-e47f-f274",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "fb0f-81ba-7c14-357f",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 40}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "Blessings of the Willow", "id": "8f50-9116-f885-601b", "hidden": false, "targetId": "7d20-24a7-5224-9728", "type": "profile"}]
+          },
+          {
+            "name": "Blessings of the Yew",
+            "id": "477b-3fa5-a4aa-d322",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "2bb8-1025-8027-d21f",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "scope": "roster",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 30}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "Blessings of the Yew", "id": "47a9-f076-9da9-ae05", "hidden": false, "targetId": "3e32-bfa7-191f-29fb", "type": "profile"}]
+          }
+        ]
+      },
+      {
+        "name": "The Kinbands of Athel Loren",
+        "id": "602d-16af-a127-4f9c",
+        "collapsible": true,
+        "hidden": false,
+        "constraints": [{"id": "51f1-9820-6828-de03", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "selectionEntries": [
+          {
+            "name": "The Kinbands Of Cavaroc",
+            "id": "3939-fa6a-4d0f-0e9d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "points", "value": 15}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands Of Cavaroc", "id": "4294-3cec-2abc-a1a0", "hidden": false, "targetId": "11a9-560b-e5b5-5785", "type": "profile"}]
+          },
+          {
+            "name": "The Kinbands Of Argwylon ",
+            "id": "3755-aa3f-9ea5-d65a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "points", "value": 10}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands Of Argwylon", "id": "d08b-6562-a273-d370", "hidden": false, "targetId": "f0d5-6422-ce15-7948", "type": "profile"}]
+          },
+          {
+            "name": "The Kinbands Of Atylwyth",
+            "id": "b12a-1081-95e8-adf5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "costs": [{"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands Of Atylwyth", "id": "f818-1857-8302-9608", "hidden": false, "targetId": "2f0e-86e5-d3af-cc09", "type": "profile"}],
+            "modifiers": [
+              {
+                "field": "points",
+                "type": "increment",
+                "value": 2,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "The Kinbands Of Modryn",
+            "id": "4f3f-6b24-7b05-6af2",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "type": "upgrade",
+            "costs": [{"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands Of Modryn", "id": "121e-a578-e34d-7036", "hidden": false, "targetId": "a7eb-65a7-adb6-ab29", "type": "profile"}],
+            "modifiers": [
+              {
+                "field": "points",
+                "type": "increment",
+                "value": 2,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "The Kinbands Of Cythral",
+            "id": "182b-2aa7-31ba-1b64",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands Of Cythral", "id": "a187-82f4-5627-8654", "hidden": false, "targetId": "e6cb-e483-0d0d-dae0", "type": "profile"}],
+            "modifiers": [
+              {
+                "field": "points",
+                "type": "increment",
+                "value": 1,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "The Kinbands of Torgovann",
+            "id": "f19b-d650-6c9b-bad7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "costs": [{"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+            "infoLinks": [{"name": "The Kinbands of Torgovann", "id": "de11-867c-2ef3-941c", "hidden": false, "targetId": "1220-99a6-f29a-f50a", "type": "profile"}],
+            "modifiers": [
+              {
+                "field": "points",
+                "type": "increment",
+                "value": 1,
+                "repeats": [{"childId": "model", "childName": "model", "field": "selections", "repeats": 1, "roundUp": false, "scope": "parent", "shared": true, "value": 1}]
               }
             ]
           }
