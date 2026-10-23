@@ -8,6 +8,7 @@
 # Don't ignore catalogues and game system
 !*.cat
 !*.gst
+!*.json
 
 # Don't ignore docs
 !*.md
@@ -18,3 +19,7 @@
 
 # Don't ignore .yml for CI build definitions
 !*.yml
+
+# Don't ignore scripts 
+!/scripts
+!/scripts/**.js
