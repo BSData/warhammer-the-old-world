@@ -13012,7 +13012,6 @@
               {
                 "name": "Hand Weapon",
                 "id": "366a-8961-4198-5f1a",
-                "collective": true,
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
@@ -13029,7 +13028,6 @@
               {
                 "name": "Equipment",
                 "id": "872b-1cc-ce15-c314",
-                "collective": true,
                 "defaultSelectionEntryId": "6c42-356f-3a98-876b",
                 "flatten": true,
                 "hidden": false,
@@ -13066,7 +13064,6 @@
             "id": "ef74-21a3-7635-fda2",
             "hidden": false,
             "sortIndex": 2,
-            "constraints": [{"id": "eb29-3cdb-966f-116b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "selectionEntries": [
               {
                 "name": "Bladesinger",
@@ -16730,7 +16727,17 @@
                 "hidden": false,
                 "sortIndex": 6,
                 "constraints": [{"id": "453e-a0d3-b17e-d32e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "entryLinks": [{"name": "General", "id": "b8c0-8277-83f4-14fd", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
+                "entryLinks": [
+                  {
+                    "name": "General",
+                    "id": "b8c0-8277-83f4-14fd",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7d76-b1a1-1535-a04c",
+                    "type": "selectionEntry",
+                    "categoryLinks": [{"name": "Treeman General", "id": "6764-3f09-d851-40c9", "hidden": false, "primary": false, "targetId": "884e-8c89-5ed4-da96"}]
+                  }
+                ]
               }
             ]
           }
@@ -20482,15 +20489,7 @@
               {"name": "Base (100x150)", "id": "a661-cfd1-9917-2ad4", "hidden": false, "targetId": "a35e-8f23-b67-1efe", "type": "profile"},
               {"name": "Gargantuan Treemen Ancient", "id": "f5cb-56b7-6204-1907", "hidden": false, "targetId": "07f8-a346-da53-8659", "type": "profile"}
             ],
-            "modifiers": [
-              {"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 7},
-              {
-                "field": "category",
-                "type": "add",
-                "value": "884e-8c89-5ed4-da96",
-                "conditions": [{"childId": "e237-63aa-0085-9a2e", "childName": "General", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
-              }
-            ],
+            "modifiers": [{"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 7}],
             "selectionEntries": [
               {
                 "name": "Ambushers",
@@ -20599,7 +20598,17 @@
                 "hidden": false,
                 "sortIndex": 6,
                 "constraints": [{"id": "54d9-0c36-53c7-5cf6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "entryLinks": [{"name": "General", "id": "e237-63aa-0085-9a2e", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
+                "entryLinks": [
+                  {
+                    "name": "General",
+                    "id": "e237-63aa-0085-9a2e",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7d76-b1a1-1535-a04c",
+                    "type": "selectionEntry",
+                    "categoryLinks": [{"name": "Treeman General", "id": "fec8-6e12-fbf9-515b", "hidden": false, "primary": false, "targetId": "884e-8c89-5ed4-da96"}]
+                  }
+                ]
               }
             ]
           }
