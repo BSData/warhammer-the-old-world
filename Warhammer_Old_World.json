@@ -208,7 +208,8 @@
       {"name": "Faction: Vampire Counts - Renegades v2.0", "id": "e1ab-4bbb-b4d1-c0ce", "hidden": true},
       {"name": "High Beastmaster", "id": "788f-45a5-f57c-b7ba", "hidden": false},
       {"name": "Wild Rider Kindred", "id": "0c77-3e8f-fb8f-ede7", "hidden": false},
-      {"name": "Faction: Wood Elf Realms - Spirits of the Forest", "id": "836c-60fc-ddbe-b202", "hidden": true}
+      {"name": "Faction: Wood Elf Realms - Spirits of the Forest", "id": "836c-60fc-ddbe-b202", "hidden": true},
+      {"name": "Faction: Tomb Kings of Khemri - Barrow Kingdom", "id": "c18d-0043-4c86-1f99", "hidden": true}
     ],
     "costTypes": [{"name": "pts", "id": "points", "defaultCostLimit": 2000}, {"name": "Unit Strength", "id": "73ea-910d-c188-35d0", "defaultCostLimit": -1, "hidden": true}],
     "forceEntries": [
