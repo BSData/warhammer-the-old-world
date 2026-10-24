@@ -21930,6 +21930,7 @@
                 "id": "cf25-8f96-6f6f-3d11",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 1,
                 "targetId": "721d-36e3-388a-c0d6",
                 "type": "selectionEntry",
                 "constraints": [{"id": "684d-8a0e-b1b8-d830", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
@@ -21939,16 +21940,26 @@
                 "id": "2ed0-c7d1-c205-c176",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 2,
                 "targetId": "6192-f9f1-5d53-2042",
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "points", "value": 2}]
               },
-              {"name": "Mark of Chaos", "id": "e679-f555-185d-c361", "hidden": false, "import": true, "targetId": "4761-327a-7529-fc41", "type": "selectionEntryGroup"},
+              {
+                "name": "Mark of Chaos",
+                "id": "e679-f555-185d-c361",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 10,
+                "targetId": "4761-327a-7529-fc41",
+                "type": "selectionEntryGroup"
+              },
               {
                 "name": "Magic Items",
                 "id": "d022-6f7f-efea-f408",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 7,
                 "targetId": "1539-fd78-88f-badd",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "9898-092c-6d95-688b", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 100}]
@@ -21976,11 +21987,24 @@
                 ]
               }
             ],
+            "selectionEntries": [
+              {
+                "name": "Chaos Rewards Table Additional Rolls",
+                "id": "e8e6-4f2c-a288-9592",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "constraints": [{"id": "77c9-2f98-6723-2efa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 25}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}]
+              }
+            ],
             "selectionEntryGroups": [
               {
                 "name": "Equipment",
                 "id": "3a47-e54c-2d95-5ca0",
                 "hidden": false,
+                "sortIndex": 6,
                 "constraints": [{"id": "ba1d-8fa3-0313-e720", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [
                   {
@@ -22016,6 +22040,7 @@
                 "name": "Armour",
                 "id": "3370-3052-e7af-aca1",
                 "hidden": false,
+                "sortIndex": 5,
                 "constraints": [
                   {"id": "2555-c97b-25c1-e491", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "b54b-8544-b88a-b425", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -22046,6 +22071,7 @@
                 "name": "Mount",
                 "id": "8647-9a2c-25e0-b581",
                 "hidden": false,
+                "sortIndex": 4,
                 "constraints": [
                   {"id": "da94-04e3-005e-967d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
                   {"id": "65fc-147a-b490-6bf0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0}
@@ -22093,6 +22119,7 @@
                 "name": "Gifts of Chaos and Chaos Mutations",
                 "id": "3beb-df34-a754-02a2",
                 "hidden": false,
+                "sortIndex": 9,
                 "constraints": [{"id": "e244-0d46-7f6c-b446", "field": "points", "scope": "self", "shared": false, "type": "max", "value": 50}],
                 "entryLinks": [
                   {"name": "Gifts of Chaos", "id": "d45e-da31-ea92-ffc8", "hidden": false, "import": true, "targetId": "82fd-ec27-de63-3852", "type": "selectionEntryGroup"},
@@ -22103,6 +22130,7 @@
                 "name": "Command",
                 "id": "0d4a-b295-a0c9-23e1",
                 "hidden": false,
+                "sortIndex": 8,
                 "constraints": [{"id": "c2b2-76b7-65b6-4bb1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "entryLinks": [{"name": "General", "id": "7177-e5be-d52a-d342", "hidden": false, "import": true, "sortIndex": 1, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
               }

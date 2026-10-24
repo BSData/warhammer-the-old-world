@@ -9803,12 +9803,12 @@
                     "costs": [{"name": "pts", "typeId": "points", "value": 4}]
                   },
                   {
-                    "name": "Ironfist",
+                    "name": "Ogre Kingdoms Ironfist",
                     "id": "5b8e-d2d0-c3e4-e3ce",
                     "hidden": false,
                     "import": true,
                     "sortIndex": 3,
-                    "targetId": "2139-5be6-d6b0-4321",
+                    "targetId": "a69e-fd20-7580-903f",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "points", "value": 6}]
                   },
@@ -11725,8 +11725,7 @@
               {"name": "Open Order", "id": "87e3-1ff3-a096-acff", "hidden": false, "targetId": "5b67-8535-146c-7cea", "type": "profile"},
               {"name": "Ogre Kingdoms Charge", "id": "724a-2ea9-830a-4ce0", "hidden": false, "targetId": "c5da-d0ba-2748-6ced", "type": "profile"},
               {"name": "Ogre Club", "id": "b574-d0a3-56a0-abc7", "hidden": false, "targetId": "74ef-797a-5040-c04f", "type": "profile"},
-              {"name": "Ravenous Hunger", "id": "31de-9bee-0b8d-3811", "hidden": false, "targetId": "240a-30f9-7ee4-6c83", "type": "profile"},
-              {"name": "Clumsy", "id": "29c2-29d1-0bdd-d2ec", "hidden": false, "targetId": "27f5-cf1a-a64b-445c", "type": "profile"}
+              {"name": "Ravenous Hunger", "id": "31de-9bee-0b8d-3811", "hidden": false, "targetId": "240a-30f9-7ee4-6c83", "type": "profile"}
             ]
           }
         ],

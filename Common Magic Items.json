@@ -11556,22 +11556,6 @@
             "hidden": false,
             "sortIndex": 3,
             "constraints": [{"id": "fcd5-32a6-30b6-3bc6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "modifiers": [
-              {
-                "field": "fcd5-32a6-30b6-3bc6",
-                "type": "set",
-                "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {"childId": "2917-37ed-ff8a-2391", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "b77d-a8a8-1f30-779c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
-                  }
-                ]
-              }
-            ],
             "selectionEntries": [
               {
                 "name": "Dragon Helm",
@@ -12207,15 +12191,7 @@
                 "field": "5fa9-be-354c-6f4c",
                 "type": "set",
                 "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {"childId": "c42b-fa63-c73f-af5d", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "b77d-a8a8-1f30-779c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
-                  }
-                ]
+                "conditions": [{"childId": "b77d-a8a8-1f30-779c", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
               }
             ],
             "selectionEntries": [
@@ -12661,15 +12637,7 @@
                 "field": "863e-2522-ef25-f996",
                 "type": "set",
                 "value": 0,
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {"childId": "2917-37ed-ff8a-2391", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1},
-                      {"childId": "c42b-fa63-c73f-af5d", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
-                    ]
-                  }
-                ]
+                "conditions": [{"childId": "2917-37ed-ff8a-2391", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
               }
             ],
             "selectionEntries": [
@@ -20395,9 +20363,15 @@
                               },
                               {"childId": "7345-d692-6f6a-d6f6", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
                             ]
+                          },
+                          {
+                            "type": "or",
+                            "conditions": [
+                              {"childId": "bd9e-eec8-c99c-db01", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+                              {"childId": "9d1b-6add-67b9-fd3a", "childName": "WIGHT", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                            ]
                           }
-                        ],
-                        "conditions": [{"childId": "bd9e-eec8-c99c-db01", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+                        ]
                       }
                     ]
                   }
