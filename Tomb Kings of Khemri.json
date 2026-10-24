@@ -120,6 +120,51 @@
             "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
           }
         ]
+      },
+      {
+        "name": "0-2 units of Skeleton Chariots may be upgraded to 'Finest Charioteers'",
+        "id": "6522-c915-9ece-9295",
+        "hidden": false,
+        "constraints": [{"id": "5609-52b0-6ba9-f18d", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
+        "modifiers": [
+          {
+            "comment": "Battle march",
+            "field": "5609-52b0-6ba9-f18d",
+            "type": "floor",
+            "value": 1,
+            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "0-2 units of Skeleton Horsemen may be upgraded to 'Noble Cavalry'",
+        "id": "c04f-f7e1-7bf4-2e6a",
+        "hidden": false,
+        "constraints": [{"id": "5bba-aff5-2bc4-35d9", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
+        "modifiers": [
+          {
+            "comment": "Battle march",
+            "field": "5bba-aff5-2bc4-35d9",
+            "type": "floor",
+            "value": 1,
+            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "0-2 units of Skeleton Skirmishers may be upgraded  to 'Shades of Death'",
+        "id": "0bb3-19bd-1f2c-68db",
+        "hidden": false,
+        "constraints": [{"id": "83ee-3f7e-1e79-455e", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}],
+        "modifiers": [
+          {
+            "comment": "Battle march",
+            "field": "83ee-3f7e-1e79-455e",
+            "type": "floor",
+            "value": 1,
+            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -4095,18 +4140,6 @@
             "shared": true,
             "type": "max",
             "value": -1
-          },
-          {
-            "id": "800b-088c-34c6-00e7",
-            "comment": "Battle March points",
-            "field": "points",
-            "includeChildForces": true,
-            "includeChildSelections": true,
-            "percentValue": false,
-            "scope": "self",
-            "shared": true,
-            "type": "max",
-            "value": -1
           }
         ],
         "modifiers": [
@@ -4121,6 +4154,12 @@
                   {"childId": "700e-e7f5-1ded-4ddc", "field": "selections", "scope": "force", "shared": true, "type": "lessThan", "value": 1},
                   {"childId": "e04b-3d83-a607-aaf", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "lessThan", "value": 1},
                   {"childId": "fb2d-588c-2f49-e25a", "field": "selections", "scope": "force", "shared": true, "type": "lessThan", "value": 1}
+                ]
+              },
+              {
+                "type": "not",
+                "conditions": [
+                  {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
                 ]
               }
             ]
@@ -4271,85 +4310,11 @@
             ]
           },
           {
-            "comment": "Battle March points",
-            "field": "800b-088c-34c6-00e7",
+            "field": "hidden",
             "type": "set",
-            "value": 0,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              }
-            ]
-          },
-          {
-            "comment": "Battle March points",
-            "field": "800b-088c-34c6-00e7",
-            "type": "increment",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
-                "type": "or",
-                "conditions": [
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
-                ]
-              }
-            ],
-            "repeats": [
-              {
-                "childId": "any",
-                "field": "limit::points",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "repeats": 1,
-                "roundUp": false,
-                "scope": "roster",
-                "shared": true,
-                "value": 4
-              }
-            ]
-          },
-          {
-            "comment": "Battle March points",
-            "field": "800b-088c-34c6-00e7",
-            "type": "increment",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
-                "type": "and",
-                "conditions": [
-                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
-                ]
-              }
-            ],
-            "repeats": [
-              {
-                "childId": "any",
-                "field": "points",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "repeats": 1,
-                "roundUp": false,
-                "scope": "force",
-                "shared": true,
-                "value": 4
-              }
+            "value": true,
+            "conditions": [
+              {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
             ]
           }
         ]
@@ -4411,7 +4376,8 @@
                 "conditions": [
                   {"childId": "2972-33ee-cbdb-6137", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1},
                   {"childId": "e04b-3d83-a607-aaf", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1},
-                  {"childId": "fb2d-588c-2f49-e25a", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1}
+                  {"childId": "fb2d-588c-2f49-e25a", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
                 ]
               }
             ]
@@ -5159,7 +5125,15 @@
             "field": "6eca-39dc-f715-c2a9",
             "type": "set",
             "value": 0,
-            "conditions": [{"childId": "9217-6289-beb1-4238", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1}]
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {"childId": "9217-6289-beb1-4238", "field": "selections", "scope": "force", "shared": true, "type": "atLeast", "value": 1},
+                  {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ]
           },
           {
             "comment": "Grand melee",
@@ -5885,18 +5859,6 @@
             "shared": true,
             "type": "max",
             "value": -1
-          },
-          {
-            "id": "e99c-89cc-e8bb-3a3f",
-            "comment": "Battle March points",
-            "field": "points",
-            "includeChildForces": true,
-            "includeChildSelections": true,
-            "percentValue": false,
-            "scope": "self",
-            "shared": true,
-            "type": "max",
-            "value": -1
           }
         ],
         "modifiers": [
@@ -5904,6 +5866,14 @@
             "field": "d59a-2547-1a65-6e3f",
             "type": "set",
             "value": 1,
+            "conditionGroups": [
+              {
+                "type": "not",
+                "conditions": [
+                  {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
+                ]
+              }
+            ],
             "conditions": [{"childId": "f4e3-6de0-8d92-c339", "field": "selections", "scope": "force", "shared": true, "type": "lessThan", "value": 1}]
           },
           {
@@ -6052,85 +6022,11 @@
             ]
           },
           {
-            "comment": "Battle March points",
-            "field": "e99c-89cc-e8bb-3a3f",
+            "field": "hidden",
             "type": "set",
-            "value": 0,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              }
-            ]
-          },
-          {
-            "comment": "Battle March points",
-            "field": "e99c-89cc-e8bb-3a3f",
-            "type": "increment",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
-                "type": "or",
-                "conditions": [
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1},
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "instanceOf", "value": 1}
-                ]
-              }
-            ],
-            "repeats": [
-              {
-                "childId": "any",
-                "field": "limit::points",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "repeats": 1,
-                "roundUp": false,
-                "scope": "roster",
-                "shared": true,
-                "value": 4
-              }
-            ]
-          },
-          {
-            "comment": "Battle March points",
-            "field": "e99c-89cc-e8bb-3a3f",
-            "type": "increment",
-            "value": 1,
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
-                "type": "and",
-                "conditions": [
-                  {"childId": "8214-cf48-b1cd-5f5e", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "1ae6-ed95-069e-a390", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "cdbe-ecb9-27cb-fd2b", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "0750-5d17-d708-f990", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1},
-                  {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "force", "shared": true, "type": "notInstanceOf", "value": 1}
-                ]
-              }
-            ],
-            "repeats": [
-              {
-                "childId": "any",
-                "field": "points",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "repeats": 1,
-                "roundUp": false,
-                "scope": "force",
-                "shared": true,
-                "value": 4
-              }
+            "value": true,
+            "conditions": [
+              {"childId": "e40a-36c4-0c66-472a", "childName": "5. Battle March", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}
             ]
           }
         ]
@@ -12386,6 +12282,70 @@
             "typeId": "64ba-31-acf0-5a"
           }
         ]
+      },
+      {
+        "name": "Honour Thy King",
+        "id": "228d-5cc5-fd1b-ce58",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "During the command sub-phase of their turn, this character may attempt to exert their will upon those around them by making a Leadership test (using their own Leadership). If this test is passed, choose one of the following bonuses. Until your next Start of Turn sub-phase this character, their mount and any unit they have joined gain that bonus:\n\n• “Hasty Advance”: The affected models gain a +1 modifier to their Movement characteristic (to a maximum of 10)\n\n\n\n\n• “Finest Warriors”: During the Combat phase of their turn, the affected models may re-roll any rolls To Hit of a natural 1.\n\n\n\n\n• “Swiftest Swords”:  The affected models gain a +D3 modifier to their Initiatve characteristic (to a maximum of 10).\n\n\nNote that a Royal Herald cannot be the General of an army that also includes a Tomb Prince, because Tomb Princes have the higher Leadership. However, should it ever occur, a unit cannot be affected by both the My Will be Done and Honour Thy King special rules at the same time.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Battle Wizards",
+        "id": "b9e3-7f93-4051-3b58",
+        "hidden": true,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "In addition to the Lores of Magic they normally know spells from, Liche Priests in a Barrow Kingdoms army may know spells from the Battle Magic and Dark Magic Lores of Magic.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Finest Charioteers",
+        "id": "0647-3090-f70b-03f2",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Finest Charioteers have an Initiative Characteristic of 3, improve their Regeneration value from 6+ to 5+, and gain the First Charge and Khopesh special rules.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Noble Cavalry",
+        "id": "c09c-0ea0-54b8-0dac",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Noble Cavalry have a Weapon Skill Characteristic of 3, improve their Regeneration value from 6+ to 5+, and gain the Khopesh special rule.",
+            "typeId": "9f84-4221-785a-db50"
+          }
+        ]
+      },
+      {
+        "name": "Shades of Death",
+        "id": "0fdc-e3a3-f391-27ce",
+        "hidden": false,
+        "typeId": "c1ac-c1c8-f9d5-9673",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Description", "$text": "Shades of Death gain the Ethereal and Magical Attacks special rules.", "typeId": "9f84-4221-785a-db50"}]
       }
     ],
     "sharedSelectionEntries": [
@@ -12875,7 +12835,34 @@
           }
         ],
         "infoLinks": [
-          {"name": "Skeleton Crew", "id": "2dbc-2cc1-f7a0-a16d", "hidden": false, "targetId": "9b81-4f72-60e8-a0f8", "type": "profile"},
+          {
+            "name": "Skeleton Crew",
+            "id": "2dbc-2cc1-f7a0-a16d",
+            "hidden": false,
+            "targetId": "9b81-4f72-60e8-a0f8",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "73b1-abe5-72f8-41e2",
+                "type": "set",
+                "value": "3",
+                "conditions": [
+                  {
+                    "childId": "50b8-a240-dd64-07ba",
+                    "childName": "Finest Charioteers",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "scope": "root-entry",
+                    "shared": true,
+                    "traverseAssociationGroup": false,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
           {"name": "Base (25x25)", "id": "35a5-e4c1-d832-2680", "hidden": false, "targetId": "193c-4d0d-de6b-bbb1", "type": "profile"}
         ]
       },
@@ -14151,6 +14138,46 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Honour Thy King",
+                "id": "dd4d-ac52-b421-b0a9",
+                "hidden": true,
+                "targetId": "228d-5cc5-fd1b-ce58",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditionGroups": [
+                      {
+                        "type": "or",
+                        "conditions": [
+                          {
+                            "childId": "6d26-d626-8a49-7092",
+                            "childName": "General",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "self",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          },
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -14368,6 +14395,33 @@
                     "sortIndex": 2,
                     "targetId": "801d-9ffd-e82d-f40e",
                     "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Necrolith Bone Dragon",
+                    "id": "1b8f-17ab-8a5c-a48d",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 4,
+                    "targetId": "88e9-3dde-cbe0-910d",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
@@ -14405,7 +14459,8 @@
                         ]
                       }
                     ]
-                  }
+                  },
+                  {"name": "General", "id": "6d26-d626-8a49-7092", "hidden": false, "import": true, "sortIndex": 1, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}
                 ]
               }
             ]
@@ -14691,6 +14746,31 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Battle Wizards",
+                "id": "f0e9-3cc5-e5b3-d745",
+                "hidden": true,
+                "targetId": "b9e3-7f93-4051-3b58",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -14811,16 +14891,70 @@
                   {"id": "a199-4e1-32f6-3f41", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "entryLinks": [
-                  {"name": "Illusion", "id": "89aa-41c4-cc1a-dd06", "hidden": false, "import": true, "sortIndex": 2, "targetId": "af66-671f-5a42-a118", "type": "selectionEntry"},
-                  {"name": "Necromancy", "id": "ca82-2cc3-c806-25a", "hidden": false, "import": true, "sortIndex": 3, "targetId": "3d31-fd64-e074-700a", "type": "selectionEntry"},
+                  {"name": "Illusion", "id": "89aa-41c4-cc1a-dd06", "hidden": false, "import": true, "sortIndex": 4, "targetId": "af66-671f-5a42-a118", "type": "selectionEntry"},
+                  {"name": "Necromancy", "id": "ca82-2cc3-c806-25a", "hidden": false, "import": true, "sortIndex": 5, "targetId": "3d31-fd64-e074-700a", "type": "selectionEntry"},
                   {
                     "name": "Elementalism",
                     "id": "9ce6-56eb-772d-c07",
                     "hidden": false,
                     "import": true,
-                    "sortIndex": 1,
+                    "sortIndex": 3,
                     "targetId": "2b23-3ae1-f5ad-8e7a",
                     "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Battle Magic",
+                    "id": "e0b8-62c4-a3b2-1a75",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "5b2e-35c6-f987-741e",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dark Magic",
+                    "id": "0890-3d31-4a8c-283e",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "e9f-f0fb-d874-4151",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "modifiers": [
@@ -15130,6 +15264,31 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "Battle Wizards",
+                "id": "e68d-8b8a-a10c-1034",
+                "hidden": false,
+                "targetId": "b9e3-7f93-4051-3b58",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -15251,13 +15410,13 @@
                   {"id": "1cc0-a3f7-3fd9-a417", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
                 ],
                 "entryLinks": [
-                  {"name": "Illusion", "id": "91a0-f167-a8d9-ee83", "hidden": false, "import": true, "sortIndex": 2, "targetId": "af66-671f-5a42-a118", "type": "selectionEntry"},
+                  {"name": "Illusion", "id": "91a0-f167-a8d9-ee83", "hidden": false, "import": true, "sortIndex": 4, "targetId": "af66-671f-5a42-a118", "type": "selectionEntry"},
                   {
                     "name": "Necromancy",
                     "id": "bdb8-d49e-cbc6-a605",
                     "hidden": false,
                     "import": true,
-                    "sortIndex": 3,
+                    "sortIndex": 5,
                     "targetId": "3d31-fd64-e074-700a",
                     "type": "selectionEntry"
                   },
@@ -15266,9 +15425,63 @@
                     "id": "12eb-1e26-f9aa-40cc",
                     "hidden": false,
                     "import": true,
-                    "sortIndex": 1,
+                    "sortIndex": 3,
                     "targetId": "2b23-3ae1-f5ad-8e7a",
                     "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Battle Magic",
+                    "id": "6e13-df79-bd43-4833",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "5b2e-35c6-f987-741e",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Dark Magic",
+                    "id": "f1a6-81c9-6d4e-61cf",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "e9f-f0fb-d874-4151",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "modifiers": [
@@ -16413,7 +16626,59 @@
               {"name": "Vanguard", "id": "fbf7-f2b0-c15d-b8e", "hidden": false, "targetId": "691e-10ec-4f7c-a2c4", "type": "profile"},
               {"name": "Press of Battle", "id": "a351-2ece-503c-86c6", "hidden": false, "targetId": "f067-3c9b-cd7b-73e3", "type": "profile"},
               {"name": "Massed Infantry", "id": "f317-2835-b2c3-2c85", "hidden": false, "targetId": "d952-3dbd-0540-96fd", "type": "profile"},
-              {"name": "Parry", "id": "4a06-776c-f1e0-338c", "hidden": false, "targetId": "e42b-d7db-b53d-9dca", "type": "profile"}
+              {"name": "Parry", "id": "4a06-776c-f1e0-338c", "hidden": false, "targetId": "e42b-d7db-b53d-9dca", "type": "profile"},
+              {
+                "name": "Ethereal",
+                "id": "c9f3-1cde-1e41-e896",
+                "hidden": true,
+                "targetId": "6561-8029-dac3-162",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "e805-4e83-62bd-d627",
+                        "childName": "Shades of Death",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Magical Attacks",
+                "id": "17ca-b6f0-9d99-403e",
+                "hidden": true,
+                "targetId": "2125-6aa2-f782-42bf",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "e805-4e83-62bd-d627",
+                        "childName": "Shades of Death",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -16575,6 +16840,59 @@
                     "type": "floor",
                     "value": 1,
                     "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+                  }
+                ]
+              },
+              {
+                "name": "Shades of Death",
+                "id": "e805-4e83-62bd-d627",
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [
+                  {
+                    "name": "0-2 units of Skeleton Skirmishers may be upgraded  to 'Shades of Death'",
+                    "id": "b10d-baff-ff98-f374",
+                    "hidden": false,
+                    "primary": false,
+                    "targetId": "0bb3-19bd-1f2c-68db"
+                  }
+                ],
+                "infoLinks": [{"name": "Shades of Death", "id": "3be1-16e2-57e1-16b1", "hidden": false, "targetId": "0fdc-e3a3-f391-27ce", "type": "profile"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "points",
+                    "type": "increment",
+                    "value": 3,
+                    "repeats": [
+                      {
+                        "id": "ce93-b5e1-3815-1abd",
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -17319,17 +17637,78 @@
               {"name": "Close Order", "id": "2037-161b-3c87-5a97", "hidden": false, "targetId": "883e-e1b1-4fe9-5912", "type": "profile"},
               {"name": "Horde", "id": "5774-d13c-b2bb-7e8f", "hidden": false, "targetId": "9cba-89a5-1796-5fe4", "type": "profile"},
               {"name": "Nehekharan Undead", "id": "54cb-ab34-f8e5-f3ba", "hidden": false, "targetId": "cc25-1643-8beb-8c64", "type": "profile"},
+              {"name": "Swiftstride", "id": "8b2c-ee98-ad2-22fe", "hidden": false, "targetId": "dc91-48b3-3696-217", "type": "profile"},
+              {"name": "Vanguard", "id": "750d-3d7-6cfe-e772", "hidden": false, "targetId": "691e-10ec-4f7c-a2c4", "type": "profile"},
+              {"name": "Cavalry Support", "id": "561d-5671-6014-890f", "hidden": false, "targetId": "9425-ffea-7a43-b80a", "type": "profile"},
               {
                 "name": "Regeneration",
-                "id": "fcd1-f90e-a3fb-9b6f",
+                "id": "8147-a514-3c22-34b0",
                 "hidden": false,
                 "targetId": "2eb0-1ec8-8e04-72d4",
                 "type": "profile",
-                "modifiers": [{"field": "name", "type": "append", "value": "(6+)"}]
+                "modifiers": [
+                  {
+                    "field": "name",
+                    "type": "append",
+                    "value": "(6+)",
+                    "conditions": [
+                      {
+                        "childId": "410e-0362-76d2-d341",
+                        "childName": "Noble Cavalry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "field": "name",
+                    "type": "append",
+                    "value": "(5+)",
+                    "conditions": [
+                      {
+                        "childId": "410e-0362-76d2-d341",
+                        "childName": "Noble Cavalry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               },
-              {"name": "Swiftstride", "id": "8b2c-ee98-ad2-22fe", "hidden": false, "targetId": "dc91-48b3-3696-217", "type": "profile"},
-              {"name": "Vanguard", "id": "750d-3d7-6cfe-e772", "hidden": false, "targetId": "691e-10ec-4f7c-a2c4", "type": "profile"},
-              {"name": "Cavalry Support", "id": "561d-5671-6014-890f", "hidden": false, "targetId": "9425-ffea-7a43-b80a", "type": "profile"}
+              {
+                "name": "Khopesh",
+                "id": "5705-0655-a36a-b760",
+                "hidden": true,
+                "targetId": "b049-caf4-f185-d3d4",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "410e-0362-76d2-d341",
+                        "childName": "Noble Cavalry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -17356,6 +17735,7 @@
           {
             "name": "Skeleton Horseman",
             "id": "21a3-df8e-4fdd-cf00",
+            "collective": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
@@ -17423,7 +17803,32 @@
               }
             ],
             "infoLinks": [
-              {"name": "Skeleton Horseman", "id": "b6b0-e507-6988-f76f", "hidden": false, "targetId": "67b1-fc66-f024-d11b", "type": "profile"},
+              {
+                "name": "Skeleton Horseman",
+                "id": "b6b0-e507-6988-f76f",
+                "hidden": false,
+                "targetId": "67b1-fc66-f024-d11b",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "b007-7d58-4f14-1e01",
+                    "type": "set",
+                    "value": "3",
+                    "conditions": [
+                      {
+                        "childId": "410e-0362-76d2-d341",
+                        "childName": "Noble Cavalry",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
               {"name": "Base (25x25)", "id": "c5-c536-fa4-a990", "hidden": false, "targetId": "193c-4d0d-de6b-bbb1", "type": "profile"}
             ],
             "modifiers": [
@@ -17431,7 +17836,7 @@
                 "id": "7765-386d-9950-da8f",
                 "comment": "if mounted",
                 "field": "category",
-                "type": "remove",
+                "type": "add",
                 "value": "5165-d052-cfc2-5887",
                 "conditionGroups": [
                   {
@@ -17467,7 +17872,7 @@
             "name": "Command",
             "id": "7872-f196-88ef-f5d",
             "hidden": false,
-            "sortIndex": 2,
+            "sortIndex": 4,
             "selectionEntries": [
               {
                 "name": "Master of Horse",
@@ -17600,6 +18005,7 @@
           {
             "name": "Unit Options",
             "id": "14c7-88dd-85a2-2e95",
+            "collective": true,
             "hidden": false,
             "sortIndex": 3,
             "selectionEntries": [
@@ -17719,6 +18125,63 @@
                     "type": "floor",
                     "value": 1,
                     "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
+                  }
+                ]
+              },
+              {
+                "name": "Noble Cavalry",
+                "id": "410e-0362-76d2-d341",
+                "collective": true,
+                "hidden": true,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "categoryLinks": [
+                  {
+                    "name": "0-2 units of Skeleton Horsemen may be upgraded to 'Noble Cavalry'",
+                    "id": "aea4-1a08-8c97-4216",
+                    "hidden": false,
+                    "primary": false,
+                    "targetId": "c04f-f7e1-7bf4-2e6a"
+                  }
+                ],
+                "constraints": [{"id": "e550-1b78-34a0-0754", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+                "infoLinks": [{"name": "Noble Cavalry", "id": "71cc-3ad7-59d6-6410", "hidden": false, "targetId": "c09c-0ea0-54b8-0dac", "type": "profile"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "points",
+                    "type": "increment",
+                    "value": 3,
+                    "repeats": [
+                      {
+                        "id": "ce34-faf4-0f97-d0fb",
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -18253,12 +18716,126 @@
                 "hidden": false,
                 "targetId": "2eb0-1ec8-8e04-72d4",
                 "type": "profile",
-                "modifiers": [{"field": "name", "type": "append", "value": "(6+)"}]
+                "modifiers": [
+                  {
+                    "field": "name",
+                    "type": "append",
+                    "value": "(6+)",
+                    "conditions": [
+                      {
+                        "childId": "50b8-a240-dd64-07ba",
+                        "childName": "Finest Charioteers",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {
+                    "field": "name",
+                    "type": "append",
+                    "value": "(5+)",
+                    "conditions": [
+                      {
+                        "childId": "50b8-a240-dd64-07ba",
+                        "childName": "Finest Charioteers",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               },
               {"name": "Horde", "id": "8d0a-8b10-7218-fb51", "hidden": false, "targetId": "9cba-89a5-1796-5fe4", "type": "profile"},
               {"name": "Iron Shod Wheels", "id": "664c-b7cb-0e2e-dff8", "hidden": false, "targetId": "d217-160c-d73c-e492", "type": "profile"},
               {"name": "Churning Wheels", "id": "f469-0bbc-4fe5-229e", "hidden": false, "targetId": "d588-87c-7401-3203", "type": "profile"},
-              {"name": "Firing Platform", "id": "806a-f961-a577-8023", "hidden": false, "targetId": "9139-5a73-4c76-823e", "type": "profile"}
+              {"name": "Firing Platform", "id": "806a-f961-a577-8023", "hidden": false, "targetId": "9139-5a73-4c76-823e", "type": "profile"},
+              {
+                "name": "Finest Charioteers",
+                "id": "9d53-0cc3-3988-aafa",
+                "hidden": false,
+                "targetId": "0647-3090-f70b-03f2",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "First Charge",
+                "id": "5889-20e4-29b0-f4ab",
+                "hidden": true,
+                "targetId": "785a-2886-af42-dce9",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "50b8-a240-dd64-07ba",
+                        "childName": "Finest Charioteers",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": true,
+                        "scope": "root-entry",
+                        "shared": true,
+                        "traverseAssociationGroup": false,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Khopesh",
+                "id": "29fb-ee7a-452f-9559",
+                "hidden": true,
+                "targetId": "b049-caf4-f185-d3d4",
+                "type": "profile",
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "50b8-a240-dd64-07ba",
+                        "childName": "Finest Charioteers",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "self",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -18379,6 +18956,55 @@
                   }
                 ]
               }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Unit Options",
+                "id": "a835-0f98-f743-f2d1",
+                "collective": true,
+                "hidden": false,
+                "sortIndex": 3,
+                "selectionEntries": [
+                  {
+                    "name": "Finest Charioteers",
+                    "id": "50b8-a240-dd64-07ba",
+                    "collective": true,
+                    "hidden": true,
+                    "import": true,
+                    "type": "upgrade",
+                    "categoryLinks": [
+                      {
+                        "name": "0-2 units of Skeleton Chariots may be upgraded to 'Finest Charioteers'",
+                        "id": "78c7-ab00-94ce-c2ae",
+                        "hidden": false,
+                        "primary": false,
+                        "targetId": "6522-c915-9ece-9295"
+                      }
+                    ],
+                    "constraints": [{"id": "ab67-3a96-25c8-24b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 6}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+                    "infoLinks": [{"name": "Finest Charioteers", "id": "bf51-a1e7-b54e-e4ad", "hidden": true, "targetId": "0647-3090-f70b-03f2", "type": "profile"}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "2154-6528-3038-6f6e",
+                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "instanceOf",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -18387,7 +19013,7 @@
             "name": "Command",
             "id": "c6e6-4504-73d0-e7c4",
             "hidden": false,
-            "sortIndex": 2,
+            "sortIndex": 3,
             "constraints": [{"id": "81b9-9434-d28f-903e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "modifiers": [
               {

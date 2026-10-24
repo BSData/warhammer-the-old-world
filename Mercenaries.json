@@ -118,6 +118,15 @@
                     "shared": true,
                     "type": "instanceOf",
                     "value": 1
+                  },
+                  {
+                    "childId": "2154-6528-3038-6f6e",
+                    "childName": "Tomb Kings of Khemri - Barrow Kingdoms",
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
                   }
                 ]
               }
