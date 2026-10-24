@@ -23563,7 +23563,10 @@
                 "constraints": [{"id": "2561-0e0b-4868-9669", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 100}]
               }
             ],
-            "infoLinks": [{"name": "Chaos Rewards Table", "id": "f9d5-ff61-9380-de17", "hidden": false, "targetId": "76fe-5828-b03b-61bb", "type": "profile"}],
+            "infoLinks": [
+              {"name": "Chaos Rewards Table", "id": "f9d5-ff61-9380-de17", "hidden": false, "targetId": "76fe-5828-b03b-61bb", "type": "profile"},
+              {"name": "Chieftain of Ruin", "id": "b6e0-92d0-6f45-c314", "hidden": false, "targetId": "42b5-fe9d-0412-b393", "type": "profile"}
+            ],
             "modifiers": [
               {"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 1},
               {

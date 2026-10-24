@@ -12514,7 +12514,11 @@
           {"name": "S", "$text": "S+1", "typeId": "4f75-25c9-31bd-7074"},
           {"name": "AP", "$text": "-2", "typeId": "15e2-fff4-477f-ea26"},
           {"name": "Special Rules", "$text": "Armour Bane (1), Magical Attacks", "typeId": "57a7-47c0-8d74-d54c"},
-          {"name": "Note", "typeId": "5e5e-34db-1ee0-86"}
+          {
+            "name": "Note",
+            "$text": "During the Combat phase, enemy models must re-roll a single successful roll To Hit made against the wielder of Mathlann's Ire.",
+            "typeId": "5e5e-34db-1ee0-86"
+          }
         ]
       },
       {
@@ -23012,6 +23016,17 @@
                 "constraints": [
                   {"id": "1851-ed6f-47a0-ed9a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
                   {"id": "1851-ed6f-47a0-ed9a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Light Armour",
+                    "id": "1568-650a-2cab-44a5",
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "7cab-40e6-f134-de78",
+                    "type": "selectionEntry",
+                    "constraints": [{"id": "bbbd-3951-3693-d32b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
+                  }
                 ]
               }
             ],

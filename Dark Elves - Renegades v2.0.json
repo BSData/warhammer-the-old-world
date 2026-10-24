@@ -14188,7 +14188,7 @@
             "infoLinks": [
               {"name": "Supreme Sorceress", "id": "8143-730d-0c12-2cb3", "hidden": false, "targetId": "1d54-7ac7-06cd-1084", "type": "profile"},
               {"name": "Base (25x25)", "id": "1931-aa6e-7ab7-beaf", "hidden": false, "targetId": "193c-4d0d-de6b-bbb1", "type": "profile"},
-              {"name": "Lore of Naggaroth", "id": "4e1a-6261-b58b-4e58", "hidden": false, "targetId": "375e-7fb1-c651-433e", "type": "infoGroup"}
+              {"name": "Lore of Naggaroth", "id": "4e1a-6261-b58b-4e58", "hidden": false, "targetId": "3bbe-222c-3abb-7469", "type": "infoGroup"}
             ],
             "modifiers": [
               {
@@ -14525,7 +14525,7 @@
             "infoLinks": [
               {"name": "Sorceress", "id": "1c8f-26df-4ed5-07b4", "hidden": false, "targetId": "dcd9-82f4-f946-f5f3", "type": "profile"},
               {"name": "Base (25x25)", "id": "c47e-8bc7-7751-643c", "hidden": false, "targetId": "193c-4d0d-de6b-bbb1", "type": "profile"},
-              {"name": "Lore of Naggaroth", "id": "3e31-aec5-718f-dcc6", "hidden": false, "targetId": "375e-7fb1-c651-433e", "type": "infoGroup"}
+              {"name": "Lore of Naggaroth", "id": "3e31-aec5-718f-dcc6", "hidden": false, "targetId": "3bbe-222c-3abb-7469", "type": "infoGroup"}
             ],
             "modifiers": [
               {

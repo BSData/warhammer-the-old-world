@@ -26,7 +26,7 @@
           {
             "field": "40a3-eaeb-ca53-726e",
             "type": "increment",
-            "value": 1,
+            "value": 2,
             "conditionGroups": [
               {
                 "type": "or",
@@ -44,7 +44,7 @@
           {
             "field": "40a3-eaeb-ca53-726e",
             "type": "increment",
-            "value": 1,
+            "value": 2,
             "conditionGroups": [
               {
                 "type": "and",
@@ -72,35 +72,20 @@
             ]
           },
           {
-            "comment": "Renegades",
-            "field": "name",
-            "type": "set",
-            "value": "0-2 Deathshrieker Rocket Launcher per 1,000 points",
+            "comment": "Battle march",
+            "field": "40a3-eaeb-ca53-726e",
+            "type": "floor",
+            "value": 2,
             "conditions": [
-              {
-                "childId": "974c-3bf3-af4b-701d",
-                "comment": "Renegades",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
+              {"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1},
+              {"childId": "any", "field": "selections", "includeChildSelections": false, "scope": "ancestor", "shared": true, "type": "notInstanceOf", "value": 1}
             ]
           },
           {
             "comment": "Battle march",
             "field": "40a3-eaeb-ca53-726e",
             "type": "floor",
-            "value": 1,
-            "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "comment": "Battle march",
-            "field": "40a3-eaeb-ca53-726e",
-            "type": "floor",
-            "value": 1,
+            "value": 2,
             "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
           }
         ]
@@ -9947,7 +9932,7 @@
           {"name": "BS", "$text": "2", "typeId": "59f9-ccf5-1155-fb05"},
           {"name": "S", "$text": "5", "typeId": "5b6b-1427-2a45-dd0c"},
           {"name": "T", "$text": "4", "typeId": "ab43-8b61-83e7-d090"},
-          {"name": "W", "$text": "2", "typeId": "83ed-7b82-bf1f-e558"},
+          {"name": "W", "$text": "3", "typeId": "83ed-7b82-bf1f-e558"},
           {"name": "I", "$text": "4", "typeId": "73b1-abe5-72f8-41e2"},
           {"name": "A", "$text": "3", "typeId": "dddc-9fbd-b0fd-a480"},
           {"name": "Ld", "$text": "7", "typeId": "c435-6b14-f77e-3c72"}
@@ -13861,33 +13846,7 @@
               }
             ],
             "infoLinks": [
-              {
-                "name": "K’daai Fireborn",
-                "id": "a7f0a076-ee3d1740",
-                "hidden": false,
-                "targetId": "3bbf-82-aae6-3c7f",
-                "type": "profile",
-                "modifiers": [
-                  {
-                    "comment": "Renegades",
-                    "field": "83ed-7b82-bf1f-e558",
-                    "type": "increment",
-                    "value": 1,
-                    "conditions": [
-                      {
-                        "childId": "974c-3bf3-af4b-701d",
-                        "comment": "Renegades",
-                        "field": "selections",
-                        "includeChildSelections": true,
-                        "scope": "force",
-                        "shared": true,
-                        "type": "atLeast",
-                        "value": 1
-                      }
-                    ]
-                  }
-                ]
-              },
+              {"name": "K’daai Fireborn", "id": "a7f0a076-ee3d1740", "hidden": false, "targetId": "3bbf-82-aae6-3c7f", "type": "profile"},
               {"name": "Base (40x40)", "id": "93eeaf4a-fdd7d674", "hidden": false, "targetId": "1b54-27fc-b510-61b8", "type": "profile"}
             ],
             "modifiers": [{"comment": "Unit strenght script", "field": "73ea-910d-c188-35d0", "type": "set", "value": 3}]

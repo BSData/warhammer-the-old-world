@@ -21985,7 +21985,8 @@
             "import": true,
             "sortIndex": 1,
             "targetId": "62fb-f89d-afc-1cf1",
-            "type": "selectionEntry"
+            "type": "selectionEntry",
+            "constraints": [{"id": "459f-9438-4f01-bd43", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}]
           }
         ],
         "infoGroups": [

@@ -21025,7 +21025,7 @@
                 "name": "Regeneration",
                 "id": "b609-a5dd-a7f7-93f7",
                 "comment": "\n",
-                "hidden": true,
+                "hidden": false,
                 "targetId": "2eb0-1ec8-8e04-72d4",
                 "type": "profile",
                 "modifiers": [{"comment": "Renegades", "field": "name", "type": "append", "value": "(5+)"}]
