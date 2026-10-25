@@ -12932,8 +12932,7 @@
             "shared": true,
             "type": "max",
             "value": -1
-          },
-          {"id": "110d-1c53-ff34-ebf3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5}
+          }
         ],
         "infoGroups": [
           {
@@ -13002,6 +13001,7 @@
             "sortIndex": 1,
             "type": "model",
             "categoryLinks": [{"name": "Regular Infantry", "id": "ecb7-c404-1d2c-d599", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
+            "constraints": [{"id": "25af-7de0-e38c-3bcf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5}],
             "costs": [{"name": "pts", "typeId": "points", "value": 16}],
             "infoLinks": [
               {"name": "Wardancers", "id": "ff98-fc22-be15-2de1", "hidden": false, "targetId": "6518-8fc0-d3e3-5158", "type": "profile"},
