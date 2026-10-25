@@ -12932,7 +12932,8 @@
             "shared": true,
             "type": "max",
             "value": -1
-          }
+          },
+          {"id": "110d-1c53-ff34-ebf3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5}
         ],
         "infoGroups": [
           {
@@ -13001,7 +13002,6 @@
             "sortIndex": 1,
             "type": "model",
             "categoryLinks": [{"name": "Regular Infantry", "id": "ecb7-c404-1d2c-d599", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
-            "constraints": [{"id": "110d-1c53-ff34-ebf3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5}],
             "costs": [{"name": "pts", "typeId": "points", "value": 16}],
             "infoLinks": [
               {"name": "Wardancers", "id": "ff98-fc22-be15-2de1", "hidden": false, "targetId": "6518-8fc0-d3e3-5158", "type": "profile"},
@@ -13054,98 +13054,97 @@
                     "type": "selectionEntry"
                   }
                 ]
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Command",
-            "id": "ef74-21a3-7635-fda2",
-            "hidden": false,
-            "sortIndex": 2,
-            "selectionEntries": [
-              {
-                "name": "Bladesinger",
-                "id": "5bed-5b0d-b155-a4c8",
-                "flatten": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "categoryLinks": [
-                  {"name": "CHAMPION", "id": "7c24-4ce0-e51f-2c67", "hidden": false, "primary": false, "targetId": "83a1-945c-564c-84af"},
-                  {"name": "Regular Infantry", "id": "4873-da3d-8a70-8a3e", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}
-                ],
-                "constraints": [
-                  {"id": "6a1e-7f99-e1d-1716", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "9998-fad5-b5f3-6b8f", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
-                ],
-                "costs": [{"name": "pts", "typeId": "points", "value": 6}],
-                "entryLinks": [
-                  {
-                    "name": "Magic Items",
-                    "id": "bb81-a59b-3a83-d78b",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "1539-fd78-88f-badd",
-                    "type": "selectionEntryGroup",
-                    "constraints": [{"id": "31e4-90bf-d36c-e2dd", "field": "points", "scope": "parent", "shared": true, "type": "max", "value": 25}]
-                  }
-                ],
-                "infoLinks": [
-                  {
-                    "name": "Wardancers",
-                    "id": "6e2a-bd55-3f1c-9a4d",
-                    "hidden": false,
-                    "targetId": "6518-8fc0-d3e3-5158",
-                    "type": "profile",
-                    "modifiers": [{"field": "dddc-9fbd-b0fd-a480", "type": "increment", "value": 1}, {"field": "name", "type": "set", "value": "Bladesinger"}]
-                  },
-                  {"name": "Champion", "id": "72f0-be29-95fa-b9b0", "hidden": false, "targetId": "5f1c-fd04-b0d5-d5e", "type": "profile"}
-                ]
               },
               {
-                "name": "Standard Bearer",
-                "id": "53cb-63f5-81b2-81d1",
-                "flatten": true,
+                "name": "Command",
+                "id": "ef74-21a3-7635-fda2",
                 "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "categoryLinks": [{"name": "Regular Infantry", "id": "4096-8c27-ff23-362b", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
-                "constraints": [
-                  {"id": "66c9-b17d-8b5d-268c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "238a-3004-7fbd-9861", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
-                ],
-                "costs": [{"name": "pts", "typeId": "points", "value": 6}],
-                "entryLinks": [
-                  {
-                    "name": "Magic Standards",
-                    "id": "f888-85fd-82cc-c6e6",
-                    "hidden": false,
-                    "import": true,
-                    "targetId": "6bbe-8054-19b7-e5d6",
-                    "type": "selectionEntryGroup",
-                    "constraints": [{"id": "258c-3068-ee85-f6e1", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
-                  }
-                ],
-                "infoLinks": [{"name": "Standard Bearer", "id": "fd5d-3cfd-7ea9-525e", "hidden": false, "targetId": "bcf8-d942-102e-b155", "type": "profile"}]
-              },
-              {
-                "name": "Musician",
-                "id": "cef1-2e76-6a07-ef98",
-                "hidden": false,
-                "import": true,
                 "sortIndex": 3,
-                "type": "upgrade",
-                "categoryLinks": [{"name": "Regular Infantry", "id": "4c95-9091-70ba-f642", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
-                "constraints": [
-                  {"id": "995b-36af-209-49f3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
-                  {"id": "f92a-8f9a-bc52-46aa", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
-                ],
-                "costs": [{"name": "pts", "typeId": "points", "value": 6}],
-                "infoLinks": [{"name": "Musician", "id": "5352-3f40-332b-dfd5", "hidden": false, "targetId": "40f2-dd77-f0ca-3663", "type": "profile"}]
+                "constraints": [{"id": "3285-b6df-afc6-adfc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "selectionEntries": [
+                  {
+                    "name": "Bladesinger",
+                    "id": "5bed-5b0d-b155-a4c8",
+                    "flatten": true,
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "type": "upgrade",
+                    "categoryLinks": [
+                      {"name": "CHAMPION", "id": "7c24-4ce0-e51f-2c67", "hidden": false, "primary": false, "targetId": "83a1-945c-564c-84af"},
+                      {"name": "Regular Infantry", "id": "4873-da3d-8a70-8a3e", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}
+                    ],
+                    "constraints": [
+                      {"id": "6a1e-7f99-e1d-1716", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "9998-fad5-b5f3-6b8f", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+                    "entryLinks": [
+                      {
+                        "name": "Magic Items",
+                        "id": "bb81-a59b-3a83-d78b",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "1539-fd78-88f-badd",
+                        "type": "selectionEntryGroup",
+                        "constraints": [{"id": "31e4-90bf-d36c-e2dd", "field": "points", "scope": "parent", "shared": true, "type": "max", "value": 25}]
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Wardancers",
+                        "id": "6e2a-bd55-3f1c-9a4d",
+                        "hidden": false,
+                        "targetId": "6518-8fc0-d3e3-5158",
+                        "type": "profile",
+                        "modifiers": [{"field": "dddc-9fbd-b0fd-a480", "type": "increment", "value": 1}, {"field": "name", "type": "set", "value": "Bladesinger"}]
+                      },
+                      {"name": "Champion", "id": "72f0-be29-95fa-b9b0", "hidden": false, "targetId": "5f1c-fd04-b0d5-d5e", "type": "profile"}
+                    ]
+                  },
+                  {
+                    "name": "Standard Bearer",
+                    "id": "53cb-63f5-81b2-81d1",
+                    "flatten": true,
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "type": "upgrade",
+                    "categoryLinks": [{"name": "Regular Infantry", "id": "4096-8c27-ff23-362b", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
+                    "constraints": [
+                      {"id": "66c9-b17d-8b5d-268c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "238a-3004-7fbd-9861", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+                    "entryLinks": [
+                      {
+                        "name": "Magic Standards",
+                        "id": "f888-85fd-82cc-c6e6",
+                        "hidden": false,
+                        "import": true,
+                        "targetId": "6bbe-8054-19b7-e5d6",
+                        "type": "selectionEntryGroup",
+                        "constraints": [{"id": "258c-3068-ee85-f6e1", "field": "points", "scope": "parent", "shared": false, "type": "max", "value": 50}]
+                      }
+                    ],
+                    "infoLinks": [{"name": "Standard Bearer", "id": "fd5d-3cfd-7ea9-525e", "hidden": false, "targetId": "bcf8-d942-102e-b155", "type": "profile"}]
+                  },
+                  {
+                    "name": "Musician",
+                    "id": "cef1-2e76-6a07-ef98",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 3,
+                    "type": "upgrade",
+                    "categoryLinks": [{"name": "Regular Infantry", "id": "4c95-9091-70ba-f642", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"}],
+                    "constraints": [
+                      {"id": "995b-36af-209-49f3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1},
+                      {"id": "f92a-8f9a-bc52-46aa", "field": "selections", "includeChildSelections": true, "scope": "4a01-6b67-783-6d3a", "shared": true, "type": "max", "value": 1}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 6}],
+                    "infoLinks": [{"name": "Musician", "id": "5352-3f40-332b-dfd5", "hidden": false, "targetId": "40f2-dd77-f0ca-3663", "type": "profile"}]
+                  }
+                ]
               }
             ]
           }
