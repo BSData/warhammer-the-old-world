@@ -13284,6 +13284,48 @@
                     "sortIndex": 2,
                     "targetId": "801d-9ffd-e82d-f40e",
                     "type": "selectionEntry"
+                  },
+                  {
+                    "name": "Necrolith Bone Dragon",
+                    "id": "c815-b4ac-9521-b6bb",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 4,
+                    "targetId": "88e9-3dde-cbe0-910d",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "1745-1f04-92f0-162d",
+                                "childName": "General",
+                                "field": "selections",
+                                "includeChildSelections": true,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "atLeast",
+                                "value": 1
+                              },
+                              {
+                                "childId": "2154-6528-3038-6f6e",
+                                "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                                "field": "selections",
+                                "scope": "primary-catalogue",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
@@ -14418,6 +14460,16 @@
                             "shared": true,
                             "type": "instanceOf",
                             "value": 1
+                          },
+                          {
+                            "childId": "6d26-d626-8a49-7092",
+                            "childName": "General",
+                            "field": "selections",
+                            "includeChildSelections": true,
+                            "scope": "parent",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
                           }
                         ]
                       }
@@ -14453,7 +14505,16 @@
                             "type": "or",
                             "conditions": [
                               {"childId": "be27-8084-f552-1f4", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                              {"childId": "708f-d597-bd5f-a586", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                              {"childId": "708f-d597-bd5f-a586", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                              {
+                                "childId": "2154-6528-3038-6f6e",
+                                "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                                "field": "selections",
+                                "scope": "primary-catalogue",
+                                "shared": true,
+                                "type": "instanceOf",
+                                "value": 1
+                              }
                             ]
                           }
                         ]
@@ -18956,55 +19017,6 @@
                   }
                 ]
               }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Unit Options",
-                "id": "a835-0f98-f743-f2d1",
-                "collective": true,
-                "hidden": false,
-                "sortIndex": 3,
-                "selectionEntries": [
-                  {
-                    "name": "Finest Charioteers",
-                    "id": "50b8-a240-dd64-07ba",
-                    "collective": true,
-                    "hidden": true,
-                    "import": true,
-                    "type": "upgrade",
-                    "categoryLinks": [
-                      {
-                        "name": "0-2 units of Skeleton Chariots may be upgraded to 'Finest Charioteers'",
-                        "id": "78c7-ab00-94ce-c2ae",
-                        "hidden": false,
-                        "primary": false,
-                        "targetId": "6522-c915-9ece-9295"
-                      }
-                    ],
-                    "constraints": [{"id": "ab67-3a96-25c8-24b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                    "costs": [{"name": "pts", "typeId": "points", "value": 6}, {"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
-                    "infoLinks": [{"name": "Finest Charioteers", "id": "bf51-a1e7-b54e-e4ad", "hidden": true, "targetId": "0647-3090-f70b-03f2", "type": "profile"}],
-                    "modifiers": [
-                      {
-                        "field": "hidden",
-                        "type": "set",
-                        "value": false,
-                        "conditions": [
-                          {
-                            "childId": "2154-6528-3038-6f6e",
-                            "childName": "Tomb Kings of Khemri - Barrow Kingdom",
-                            "field": "selections",
-                            "scope": "primary-catalogue",
-                            "shared": true,
-                            "type": "instanceOf",
-                            "value": 1
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
             ]
           }
         ],
@@ -19127,6 +19139,71 @@
                 "constraints": [{"id": "de59-382b-a675-bb05", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "costs": [{"name": "pts", "typeId": "points", "value": 6}],
                 "infoLinks": [{"name": "Musician", "id": "1ab1-ab8d-3056-5555", "hidden": false, "targetId": "40f2-dd77-f0ca-3663", "type": "profile"}]
+              }
+            ]
+          },
+          {
+            "name": "Unit Options",
+            "id": "a835-0f98-f743-f2d1",
+            "collective": true,
+            "hidden": false,
+            "sortIndex": 2,
+            "selectionEntries": [
+              {
+                "name": "Finest Charioteers",
+                "id": "50b8-a240-dd64-07ba",
+                "collective": true,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [
+                  {
+                    "name": "0-2 units of Skeleton Chariots may be upgraded to 'Finest Charioteers'",
+                    "id": "78c7-ab00-94ce-c2ae",
+                    "hidden": false,
+                    "primary": false,
+                    "targetId": "6522-c915-9ece-9295"
+                  }
+                ],
+                "constraints": [{"id": "ab67-3a96-25c8-24b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+                "costs": [{"name": "Unit Strength", "typeId": "73ea-910d-c188-35d0", "value": 0}],
+                "infoLinks": [{"name": "Finest Charioteers", "id": "bf51-a1e7-b54e-e4ad", "hidden": true, "targetId": "0647-3090-f70b-03f2", "type": "profile"}],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "2154-6528-3038-6f6e",
+                        "childName": "Tomb Kings of Khemri - Barrow Kingdom",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "points",
+                    "type": "increment",
+                    "value": 6,
+                    "repeats": [
+                      {
+                        "id": "7ab6-56fa-c285-2a45",
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "repeats": 1,
+                        "roundUp": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
