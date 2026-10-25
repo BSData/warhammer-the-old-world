@@ -17086,7 +17086,38 @@
                 "hidden": false,
                 "sortIndex": 6,
                 "constraints": [{"id": "6efc-8f06-3a6f-cd51", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-                "entryLinks": [{"name": "General", "id": "f83b-edcd-8260-7a50", "hidden": false, "import": true, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"}]
+                "entryLinks": [
+                  {"name": "General", "id": "f83b-edcd-8260-7a50", "hidden": false, "import": true, "sortIndex": 1, "targetId": "7d76-b1a1-1535-a04c", "type": "selectionEntry"},
+                  {
+                    "name": "Battle Standard Bearer",
+                    "id": "4f98-dfe6-070b-8960",
+                    "hidden": true,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "5b87-9cf5-953d-3829",
+                    "type": "selectionEntry",
+                    "costs": [{"name": "pts", "typeId": "points", "value": 25}],
+                    "entryLinks": [{"name": "Magic Standards", "id": "7fa9-156b-f63d-ad56", "hidden": false, "import": true, "targetId": "6bbe-8054-19b7-e5d6", "type": "selectionEntryGroup"}],
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditions": [
+                          {
+                            "childId": "836c-60fc-ddbe-b202",
+                            "childName": "Faction: Wood Elf Realms - Spirits of the Forest",
+                            "field": "selections",
+                            "scope": "primary-catalogue",
+                            "shared": true,
+                            "type": "atLeast",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
