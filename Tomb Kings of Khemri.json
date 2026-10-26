@@ -16768,6 +16768,7 @@
             "id": "5bfe-fba0-b396-1eae",
             "hidden": false,
             "import": true,
+            "sortIndex": 1,
             "type": "model",
             "categoryLinks": [
               {"name": "Regular Infantry", "id": "5091-a99c-42de-e402", "hidden": false, "primary": false, "targetId": "f3f7-ca43-674e-115f"},
@@ -16834,6 +16835,7 @@
             "name": "Unit Options",
             "id": "6b2f-cc9-89bc-4e6a",
             "hidden": false,
+            "sortIndex": 3,
             "constraints": [{"id": "00db-ce7d-d7c9-7619", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "selectionEntries": [
               {
@@ -16903,7 +16905,14 @@
                     "conditions": [{"childId": "e40a-36c4-0c66-472a", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}]
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "name": "Special Rules",
+            "id": "6a3f-411b-e72f-337a",
+            "hidden": false,
+            "selectionEntries": [
               {
                 "name": "Shades of Death",
                 "id": "e805-4e83-62bd-d627",
@@ -16919,6 +16928,7 @@
                     "targetId": "0bb3-19bd-1f2c-68db"
                   }
                 ],
+                "constraints": [{"id": "33fc-37fa-a39d-6668", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
                 "infoLinks": [{"name": "Shades of Death", "id": "3be1-16e2-57e1-16b1", "hidden": false, "targetId": "0fdc-e3a3-f391-27ce", "type": "profile"}],
                 "modifiers": [
                   {
