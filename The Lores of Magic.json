@@ -396,19 +396,19 @@
             ]
           },
           {
-            "name": "Dwellers Bellow",
+            "name": "Dwellers Below",
             "id": "7653-4449-b67d-ec0e",
             "hidden": false,
             "typeId": "8232-ae14-b1f6-b4df",
             "typeName": "Spell",
             "characteristics": [
-              {"name": "Number", "typeId": "8a2b-690b-e552-6aa0"},
+              {"name": "Number", "$text": "", "typeId": "8a2b-690b-e552-6aa0"},
               {"name": "Type", "$text": "Assailment", "typeId": "c2ca-5fd1-5e9d-bc90"},
               {"name": "Casting Value", "$text": "7+", "typeId": "d84d-3b8b-654a-9e1a"},
               {"name": "Range", "$text": "Combat", "typeId": "1043-a0ad-2909-dd28"},
               {
                 "name": "Effect",
-                "$text": "Place a small (3\") blast template so that its central hole is directly over the center of a unit the caster is engaged in combat with. Once placed, the template will scatter D3+1\". Any model whose base lies underneath the template's final position risks being hit and suffering a single Strength 3 hit with an AP of -.",
+                "$text": "Place a small (3\") blast template so that its central hole is directly over the centre of a unit the caster is engaged in combat with. Once placed, the template will scatter D3+1\". Any enemy model whose base lies underneath the template's final position risks being hit and suffering a single Strength 3 hit with an AP of -.",
                 "typeId": "64ba-31-acf0-5a"
               }
             ]
