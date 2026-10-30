@@ -360,7 +360,16 @@
                       {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "86da-6653-7618-1f76", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a9dd-e192-9fec-b81e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
@@ -1368,7 +1377,16 @@
                       {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "86da-6653-7618-1f76", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a9dd-e192-9fec-b81e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
@@ -2376,7 +2394,16 @@
                       {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "86da-6653-7618-1f76", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a9dd-e192-9fec-b81e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
@@ -4399,7 +4426,16 @@
                       {"childId": "9fe3-70dd-d556-b9bb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "86da-6653-7618-1f76", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
                       {"childId": "a9dd-e192-9fec-b81e", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
-                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}
+                      {"childId": "5a5f-cf0f-2797-a0cb", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1},
+                      {
+                        "childId": "1795-303c-eb46-1e30",
+                        "childName": "Wood Elf Realms - Spirits of the Forest",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
                     ]
                   }
                 ]
