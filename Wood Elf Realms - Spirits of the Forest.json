@@ -7514,6 +7514,19 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Orion, the King in the Woods",
+        "id": "8271-2af1-ee75-2f65",
+        "hidden": false,
+        "import": true,
+        "targetId": "9a51-e463-37b2-5381",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Named Characters", "id": "2ca2-7b6f-7447-c7f1", "hidden": false, "primary": true, "targetId": "3ba8-a41e-b6ae-d4ba"},
+          {"name": "Characters", "id": "8eab-a4f7-2a23-a078", "hidden": false, "primary": false, "targetId": "a4cc-15c9-cfae-1b3b"},
+          {"name": "Faction: Wood Elf Realms - Spirits of the Forest", "id": "aaa6-6d35-0b83-7b0f", "hidden": false, "primary": false, "targetId": "836c-60fc-ddbe-b202"}
+        ]
       }
     ]
   }

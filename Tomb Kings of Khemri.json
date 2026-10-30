@@ -14966,7 +14966,7 @@
                   {
                     "name": "Battle Magic",
                     "id": "e0b8-62c4-a3b2-1a75",
-                    "hidden": false,
+                    "hidden": true,
                     "import": true,
                     "sortIndex": 1,
                     "targetId": "5b2e-35c6-f987-741e",
@@ -14993,7 +14993,7 @@
                   {
                     "name": "Dark Magic",
                     "id": "0890-3d31-4a8c-283e",
-                    "hidden": false,
+                    "hidden": true,
                     "import": true,
                     "sortIndex": 2,
                     "targetId": "e9f-f0fb-d874-4151",
