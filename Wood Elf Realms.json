@@ -20408,7 +20408,7 @@
           {
             "name": "Root eruption - Ancient",
             "id": "1468-ca6b-2044-320b",
-            "hidden": false,
+            "hidden": true,
             "targetId": "3f36-823e-9dd8-d8f0",
             "type": "profile",
             "modifiers": [
