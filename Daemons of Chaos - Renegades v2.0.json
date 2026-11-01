@@ -26060,7 +26060,13 @@
                     "hidden": false,
                     "typeId": "7e3f-6bdc-30ee-52e1",
                     "typeName": "Daemonic Icons",
-                    "characteristics": [{"name": "Description", "$text": "", "typeId": "bfb7-e546-1999-128b"}]
+                    "characteristics": [
+                      {
+                        "name": "Description",
+                        "$text": "Daemonic Locus only. Friendly Daemonic units reduce the number of wounds suffered due to the Daemonic Instability special rule by an additional D3 whilst within the command range of this model.",
+                        "typeId": "bfb7-e546-1999-128b"
+                      }
+                    ]
                   }
                 ]
               },
