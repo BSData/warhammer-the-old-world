@@ -26035,7 +26035,7 @@
               {
                 "name": "Totem Of Eternal War",
                 "id": "d4b0-55b2-6746-38b7",
-                "hidden": false,
+                "hidden": true,
                 "import": true,
                 "sortIndex": 2,
                 "type": "upgrade",
@@ -26048,7 +26048,7 @@
                   {
                     "field": "hidden",
                     "type": "set",
-                    "value": true,
+                    "value": false,
                     "conditions": [{"childId": "b727-9b30-81eb-c25d", "field": "selections", "scope": "ancestor", "shared": true, "type": "notInstanceOf", "value": 1}]
                   }
                 ],
