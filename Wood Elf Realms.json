@@ -20378,7 +20378,60 @@
           {"id": "2530-1f7c-17c4-7d7a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "c8b7-790c-dca8-36b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Root eruption", "id": "6a8f-279c-add9-6d50", "hidden": false, "targetId": "c5e1-341d-c624-3e5a", "type": "profile"}]
+        "infoLinks": [
+          {
+            "name": "Root eruption",
+            "id": "6a8f-279c-add9-6d50",
+            "hidden": true,
+            "targetId": "c5e1-341d-c624-3e5a",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "d1e7-ab09-e4d8-3148",
+                    "childName": "Gargantuan Treemen",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "root-entry",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Root eruption - Ancient",
+            "id": "1468-ca6b-2044-320b",
+            "hidden": true,
+            "targetId": "3f36-823e-9dd8-d8f0",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "6b30-3e6c-2ca1-e9be",
+                    "childName": "Gargantuan Treeman Ancient",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "root-entry",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Gargantuan Treeman Ancient",
